@@ -1,5 +1,7 @@
-const Page = () => {
-  return <h1 className="text-3xl font-bold underline">Hello, Next.js!</h1>
+import Header from '../components/FirstSection/Header'
+
+const Page: React.FC = () => {
+  return <Header></Header>
 }
 
 export default Page

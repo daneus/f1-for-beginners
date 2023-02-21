@@ -1,9 +1,9 @@
 import './globals.css'
 
-const RootLayout = ({ children }) => {
+const RootLayout: React.FC = ({ children }: { children: React.ReactNode }) => {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html className="bg-black box-border" lang="en">
+      <body className="relative">{children}</body>
     </html>
   )
 }
