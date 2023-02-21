@@ -6,13 +6,16 @@
   @font-face {
     font-family: 'F1Regular';
     src: url('/fonts/Formula1-Regular.woff2') format('woff2');
-    font-weight: 500;
+    font-weight: 400;
     font-display: swap;
     font-style: normal;
   }
   @font-face {
     font-family: 'F1Bold';
-    src: url('/fonts/Formula1-Bold.ttf') format('ttf');
+    src: url('/fonts/Formula1-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
   }
 }
 
