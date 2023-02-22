@@ -22,6 +22,15 @@ module.exports = {
       fontFamily: {
         f1regular: 'F1Regular',
         f1bold: 'F1Bold'
+      },
+      keyframes: {
+        gradient: {
+          '0%': { 'background-position': '0% center' },
+          '100%': { 'background-position': '200% center' }
+        }
+      },
+      animation: {
+        'bg-animation': 'gradient 3s linear infinite'
       }
     }
   },
