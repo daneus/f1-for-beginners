@@ -17,7 +17,7 @@ module.exports = {
         BG1Shadow: 'inset 0 -100 200 0 black'
       },
       colors: {
-        dim: 'rgba(0, 0, 0, 0.4)'
+        dim: 'rgba(0, 0, 0, 0.6)'
       },
       fontFamily: {
         f1regular: 'F1Regular',
