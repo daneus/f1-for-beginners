@@ -17,7 +17,7 @@ module.exports = {
         BG1Shadow: 'inset 0 -100 200 0 black'
       },
       colors: {
-        dim: 'rgba(0, 0, 0, 0.6)'
+        dim: 'rgba(0, 0, 0, 0.7)'
       },
       fontFamily: {
         f1regular: 'F1Regular',
@@ -28,9 +28,6 @@ module.exports = {
           '0%': { 'background-position': '0% center' },
           '100%': { 'background-position': '200% center' }
         }
-      },
-      animation: {
-        'bg-animation': 'gradient 3s linear infinite'
       }
     }
   },
