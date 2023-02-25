@@ -19,10 +19,25 @@
   }
 }
 
-html::-webkit-scrollbar {
+html::-webkit-scrollbar,
+#wrapper::-webkit-scrollbar {
   display: none;
 }
-html {
+
+html,
+#wrapper {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+#wrapper {
+  perspective: 10px;
+}
+
+#container {
+  transform-style: preserve-3d;
+}
+
+#BG1 {
+  transform: translateZ(-10px) scale(2);
 }
