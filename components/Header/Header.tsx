@@ -11,6 +11,7 @@ const Header: React.FC = () => {
       >
         <div className="absolute w-full h-full bg-dim shadow-[inset_0px_-50px_60px_0_rgba(0,0,0,.8)]"></div>
         <Image
+          priority
           id="BG1"
           className="w-full h-full object-cover"
           src={BG1}
