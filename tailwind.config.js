@@ -31,8 +31,7 @@ module.exports = {
       },
       fontFamily: {
         f1regular: 'F1Regular',
-        f1bold: 'F1Bold',
-        f1wide: 'F1Wide'
+        f1bold: 'F1Bold'
       },
       keyframes: {
         gradient: {

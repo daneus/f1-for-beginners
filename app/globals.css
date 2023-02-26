@@ -17,13 +17,6 @@
     font-display: swap;
     font-style: normal;
   }
-  @font-face {
-    font-family: 'F1Wide';
-    src: url('/fonts/Formula1-Wide.woff2') format('woff2');
-    font-weight: 700;
-    font-display: swap;
-    font-style: normal;
-  }
 }
 
 html::-webkit-scrollbar,
