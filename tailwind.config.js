@@ -27,7 +27,7 @@ module.exports = {
         alphaTauri: '#5E8FAA',
         ferrari: '#F91536',
         alfaRomeo: '#C92D4B',
-        williams: '#37BEDDs'
+        williams: '#37BEDD'
       },
       fontFamily: {
         f1regular: 'F1Regular',

@@ -150,11 +150,11 @@ const CircularComponent: React.FC = () => {
           alt={'Alfa Romeo Logo'}
         ></Image>
       </motion.div>
-      <div className="absolute h-[54.6%] w-[52%] flex justify-center items-center flex-col gap-[1.5vmax]">
-        <div className="constructor-title font-f1bold text-redBull text-[5vmin]">
+      <div className="absolute h-[54.6%] w-[52%] flex justify-center items-center flex-col gap-[2.4vmax]">
+        <div className="redBull-title text-white font-f1bold text-[5vmin]">
           Red Bull
         </div>
-        <div className="flex flex-col justify-center items-start gap-[1vmax]">
+        <div className=" flex flex-col justify-center items-start gap-[1vmax]">
           <div className="flex justify-start items-center gap-[1.5vmax]">
             <div>
               <Image

@@ -63,3 +63,173 @@ html,
   z-index: -1;
   border-radius: 100%;
 }
+
+.redBull-title {
+  text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #3671c6, 0 0 3.8vmin #3671c6,
+    0 0 5.5vmin #3671c6, 0 0 9vmin #3671c6;
+  animation: glowRedBull 0.5s ease-in-out infinite alternate;
+}
+
+.ferrari-title {
+  text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #f91536, 0 0 3.8vmin #f91536,
+    0 0 5.5vmin #f91536, 0 0 9vmin #f91536;
+  animation: glowFerrari 0.5s ease-in-out infinite alternate;
+}
+
+.mercedes-title {
+  text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #30aa92, 0 0 3.8vmin #30aa92,
+    0 0 5.5vmin #30aa92, 0 0 9vmin #30aa92;
+  animation: glowMercedes 0.5s ease-in-out infinite alternate;
+}
+
+.alpine-title {
+  text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #2293d1, 0 0 3.8vmin #2293d1,
+    0 0 5.5vmin #2293d1, 0 0 9vmin #2293d1;
+  animation: glowAlpine 0.5s ease-in-out infinite alternate;
+}
+
+.mcLaren-title {
+  text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #f58020, 0 0 3.8vmin #f58020,
+    0 0 5.5vmin #f58020, 0 0 9vmin #f58020;
+  animation: glowMcLaren 0.5s ease-in-out infinite alternate;
+}
+
+.astonMartin-title {
+  text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #c92d4b, 0 0 3.8vmin #c92d4b,
+    0 0 5.5vmin #c92d4b, 0 0 9vmin #c92d4b;
+  animation: glowAstonMartin 0.5s ease-in-out infinite alternate;
+}
+
+.astonMartin-title {
+  text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #358c75, 0 0 3.8vmin #358c75,
+    0 0 5.5vmin #358c75, 0 0 9vmin #358c75;
+  animation: glowAstonMartin 0.5s ease-in-out infinite alternate;
+}
+
+.haas-title {
+  text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #6d6d6d, 0 0 3.8vmin #6d6d6d,
+    0 0 5.5vmin #6d6d6d, 0 0 9vmin #6d6d6d;
+  animation: glowHaas 0.5s ease-in-out infinite alternate;
+}
+
+.alphaTauri-title {
+  text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #5e8faa, 0 0 3.8vmin #5e8faa,
+    0 0 5.5vmin #5e8faa, 0 0 9vmin #5e8faa;
+  animation: glowAlphaTauri 0.5s ease-in-out infinite alternate;
+}
+
+.williams-title {
+  text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #2596af, 0 0 3.8vmin #2596af,
+    0 0 5.5vmin #2596af, 0 0 9vmin #2596af;
+  animation: glowWilliams 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes glowRedBull {
+  100% {
+    text-shadow: 0 0 0.7vmin #fff, 0 0 1vmin #3671c6, 0 0 2vmin #3671c6,
+      0 0 4vmin #3671c6, 0 0 6vmin #3671c6;
+  }
+  0% {
+    text-shadow: 0 0 0.7vmin #fff, 0 0 1.8vmin #3671c6, 0 0 2.8vmin #3671c6,
+      0 0 4.8vmin #3671c6, 0 0 7.8vmin #3671c6;
+  }
+}
+
+@keyframes glowFerrari {
+  100% {
+    text-shadow: 0 0 0.7vmin #fff, 0 0 1vmin #f91536, 0 0 2vmin #f91536,
+      0 0 4vmin #f91536, 0 0 6vmin #f91536;
+  }
+  0% {
+    text-shadow: 0 0 0.7vmin #fff, 0 0 1.8vmin #f91536, 0 0 2.8vmin #f91536,
+      0 0 4.8vmin #f91536, 0 0 7.8vmin #f91536;
+  }
+}
+
+@keyframes glowMercedes {
+  100% {
+    text-shadow: 0 0 0.7vmin #fff, 0 0 1vmin #30aa92, 0 0 2vmin #30aa92,
+      0 0 4vmin #30aa92, 0 0 6vmin #30aa92;
+  }
+  0% {
+    text-shadow: 0 0 0.7vmin #fff, 0 0 1.8vmin #30aa92, 0 0 2.8vmin #30aa92,
+      0 0 4.8vmin #30aa92, 0 0 7.8vmin #30aa92;
+  }
+}
+
+@keyframes glowAlpine {
+  100% {
+    text-shadow: 0 0 0.7vmin #fff, 0 0 1vmin #2293d1, 0 0 2vmin #2293d1,
+      0 0 4vmin #2293d1, 0 0 6vmin #2293d1;
+  }
+  0% {
+    text-shadow: 0 0 0.7vmin #fff, 0 0 1.8vmin #2293d1, 0 0 2.8vmin #2293d1,
+      0 0 4.8vmin #2293d1, 0 0 7.8vmin #2293d1;
+  }
+}
+
+@keyframes glowMcLaren {
+  100% {
+    text-shadow: 0 0 0.7vmin #fff, 0 0 1vmin #f58020, 0 0 2vmin #f58020,
+      0 0 4vmin #f58020, 0 0 6vmin #f58020;
+  }
+  0% {
+    text-shadow: 0 0 0.7vmin #fff, 0 0 1.8vmin #f58020, 0 0 2.8vmin #f58020,
+      0 0 4.8vmin #f58020, 0 0 7.8vmin #f58020;
+  }
+}
+
+@keyframes glowMcLaren {
+  100% {
+    text-shadow: 0 0 0.7vmin #fff, 0 0 1vmin #c92d4b, 0 0 2vmin #c92d4b,
+      0 0 4vmin #c92d4b, 0 0 6vmin #c92d4b;
+  }
+  0% {
+    text-shadow: 0 0 0.7vmin #fff, 0 0 1.8vmin #c92d4b, 0 0 2.8vmin #c92d4b,
+      0 0 4.8vmin #c92d4b, 0 0 7.8vmin #c92d4b;
+  }
+}
+
+@keyframes glowMcLaren {
+  100% {
+    text-shadow: 0 0 0.7vmin #fff, 0 0 1vmin #358c75, 0 0 2vmin #358c75,
+      0 0 4vmin #358c75, 0 0 6vmin #358c75;
+  }
+  0% {
+    text-shadow: 0 0 0.7vmin #fff, 0 0 1.8vmin #358c75, 0 0 2.8vmin #358c75,
+      0 0 4.8vmin #358c75, 0 0 7.8vmin #358c75;
+  }
+}
+
+@keyframes glowHaas {
+  100% {
+    text-shadow: 0 0 0.7vmin #fff, 0 0 1vmin #6d6d6d, 0 0 2vmin #6d6d6d,
+      0 0 4vmin #6d6d6d, 0 0 6vmin #6d6d6d;
+  }
+  0% {
+    text-shadow: 0 0 0.7vmin #fff, 0 0 1.8vmin #6d6d6d, 0 0 2.8vmin #6d6d6d,
+      0 0 4.8vmin #6d6d6d, 0 0 7.8vmin #6d6d6d;
+  }
+}
+
+@keyframes glowAlphaTauri {
+  100% {
+    text-shadow: 0 0 0.7vmin #fff, 0 0 1vmin #5e8faa, 0 0 2vmin #5e8faa,
+      0 0 4vmin #5e8faa, 0 0 6vmin #5e8faa;
+  }
+  0% {
+    text-shadow: 0 0 0.7vmin #fff, 0 0 1.8vmin #5e8faa, 0 0 2.8vmin #5e8faa,
+      0 0 4.8vmin #5e8faa, 0 0 7.8vmin #5e8faa;
+  }
+}
+
+@keyframes glowWilliams {
+  100% {
+    text-shadow: 0 0 0.7vmin #fff, 0 0 1vmin #2596af, 0 0 2vmin #2596af,
+      0 0 4vmin #2596af, 0 0 6vmin #2596af;
+  }
+  0% {
+    text-shadow: 0 0 0.7vmin #fff, 0 0 1.8vmin #2596af, 0 0 2.8vmin #2596af,
+      0 0 4.8vmin #2596af, 0 0 7.8vmin #2596af;
+  }
+}
