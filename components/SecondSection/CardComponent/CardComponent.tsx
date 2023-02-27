@@ -17,6 +17,7 @@ const CardComponent: React.FC<Props> = teamObject => {
         <div className="flex justify-start items-center gap-[1.5vmax]">
           <div className="h-[6vmax] w-[6vmax] relative">
             <Image
+              priority
               className="rounded-[100%]"
               src={`/images/drivers/${teamObject.teamObject.firstDriverLastName}.svg`}
               alt={`${teamObject.teamObject.firstDriverName} ${teamObject.teamObject.firstDriverLastName}`}
@@ -37,6 +38,7 @@ const CardComponent: React.FC<Props> = teamObject => {
             <div className="flex justify-center items-center gap-[.5vmax]">
               <div className="w-[4.2vmin] h-[2.8vmin] relative">
                 <Image
+                  priority
                   className="rounded-[.6vmin]"
                   src={`/images/flags/${teamObject.teamObject.firstDriverCountry}.jpg`}
                   alt={`${teamObject.teamObject.firstDriverCountry} flag`}
@@ -52,6 +54,7 @@ const CardComponent: React.FC<Props> = teamObject => {
         <div className="flex justify-start items-center gap-[1.5vmax]">
           <div className="h-[6vmax] w-[6vmax] relative">
             <Image
+              priority
               className="rounded-[100%]"
               src={`/images/drivers/${teamObject.teamObject.secondDriverLastName}.svg`}
               alt={`${teamObject.teamObject.secondDriverName} ${teamObject.teamObject.secondDriverLastName}`}
@@ -72,6 +75,7 @@ const CardComponent: React.FC<Props> = teamObject => {
             <div className="flex justify-center items-center gap-[.5vmax]">
               <div className="w-[4.2vmin] h-[2.8vmin] relative">
                 <Image
+                  priority
                   className="rounded-[.6vmin]"
                   src={`/images/flags/${teamObject.teamObject.secondDriverCountry}.jpg`}
                   alt={`${teamObject.teamObject.secondDriverCountry} flag`}

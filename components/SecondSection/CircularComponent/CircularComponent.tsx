@@ -15,14 +15,8 @@ import HaasLogo from '../../../public/logos/constructors/Haas.svg'
 import AlphaTauriLogo from '../../../public/logos/constructors/AlphaTauri.svg'
 import WilliamsLogo from '../../../public/logos/constructors/Williams.svg'
 
-import TeamsData from '../../../data/TeamsData'
-import CardComponent from '../CardComponent/CardComponent'
-
-// import Verstappen from '../../../public/images/drivers/Verstappen.svg'
-// import Perez from '../../../public/images/drivers/Perez.svg'
-
-// import Netherlands from '../../../public/images/flags/Netherlands.svg'
-// import Mexico from '../../../public/images/flags/Mexico.svg'
+// import TeamsData from '../../../data/TeamsData'
+// import CardComponent from '../CardComponent/CardComponent'
 
 const CircularComponent: React.FC = () => {
   return (
@@ -35,6 +29,7 @@ const CircularComponent: React.FC = () => {
       >
         <div className="fade-circle"></div>
         <Image
+          priority
           className="w-[55%]"
           src={RedBullLogo}
           alt={'Red Bull Logo'}
@@ -48,6 +43,7 @@ const CircularComponent: React.FC = () => {
       >
         <div className="fade-circle"></div>
         <Image
+          priority
           className="h-[40%]"
           src={FerrariLogo}
           alt={'Ferrari Logo'}
@@ -61,6 +57,7 @@ const CircularComponent: React.FC = () => {
       >
         <div className="fade-circle"></div>
         <Image
+          priority
           className="h-[35%]"
           src={WilliamsLogo}
           alt={'Williams Logo'}
@@ -74,6 +71,7 @@ const CircularComponent: React.FC = () => {
       >
         <div className="fade-circle"></div>
         <Image
+          priority
           className="w-[42.5%]"
           src={MercedesLogo}
           alt={'Mercedes Logo'}
@@ -87,6 +85,7 @@ const CircularComponent: React.FC = () => {
       >
         <div className="fade-circle"></div>
         <Image
+          priority
           className="w-[52.5%]"
           src={AlphaTauriLogo}
           alt={'AlphaTauri Logo'}
@@ -100,6 +99,7 @@ const CircularComponent: React.FC = () => {
       >
         <div className="fade-circle"></div>
         <Image
+          priority
           className="w-[52.5%]"
           src={AlpineLogo}
           alt={'Alpine Logo'}
@@ -112,7 +112,12 @@ const CircularComponent: React.FC = () => {
         className="logo-container bottom-[19%] left-[10%]"
       >
         <div className="fade-circle"></div>
-        <Image className="w-[50%]" src={HaasLogo} alt={'Haas Logo'}></Image>
+        <Image
+          priority
+          className="w-[50%]"
+          src={HaasLogo}
+          alt={'Haas Logo'}
+        ></Image>
       </motion.div>
       <motion.div
         whileHover={{ scale: 1.05 }}
@@ -122,6 +127,7 @@ const CircularComponent: React.FC = () => {
       >
         <div className="fade-circle"></div>
         <Image
+          priority
           className="w-[45%]"
           src={McLarenLogo}
           alt={'McLaren Logo'}
@@ -135,7 +141,8 @@ const CircularComponent: React.FC = () => {
       >
         <div className="fade-circle"></div>
         <Image
-          className="w-[60%]"
+          priority
+          className="w-[60%] h-auto"
           src={AstonMartinLogo}
           alt={'Aston Martin Logo'}
         ></Image>
@@ -148,12 +155,15 @@ const CircularComponent: React.FC = () => {
       >
         <div className="fade-circle"></div>
         <Image
+          priority
           className="h-[50%]"
           src={AlfaRomeoLogo}
           alt={'Alfa Romeo Logo'}
         ></Image>
       </motion.div>
-      <CardComponent teamObject={TeamsData[0]}></CardComponent>
+      {/* {TeamsData.map((team, i) => {
+        return <CardComponent key={i} teamObject={team}></CardComponent>
+      })} */}
     </div>
   )
 }
