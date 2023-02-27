@@ -15,11 +15,14 @@ import HaasLogo from '../../../public/logos/constructors/Haas.svg'
 import AlphaTauriLogo from '../../../public/logos/constructors/AlphaTauri.svg'
 import WilliamsLogo from '../../../public/logos/constructors/Williams.svg'
 
-import Verstappen from '../../../public/images/drivers/Verstappen.svg'
-import Perez from '../../../public/images/drivers/Perez.svg'
+import TeamsData from '../../../data/TeamsData'
+import CardComponent from '../CardComponent/CardComponent'
 
-import Netherlands from '../../../public/images/flags/Netherlands.svg'
-import Mexico from '../../../public/images/flags/Mexico.svg'
+// import Verstappen from '../../../public/images/drivers/Verstappen.svg'
+// import Perez from '../../../public/images/drivers/Perez.svg'
+
+// import Netherlands from '../../../public/images/flags/Netherlands.svg'
+// import Mexico from '../../../public/images/flags/Mexico.svg'
 
 const CircularComponent: React.FC = () => {
   return (
@@ -150,71 +153,7 @@ const CircularComponent: React.FC = () => {
           alt={'Alfa Romeo Logo'}
         ></Image>
       </motion.div>
-      <div className="absolute h-[54.6%] w-[52%] flex justify-center items-center flex-col gap-[2.4vmax]">
-        <div className="redBull-title text-white font-f1bold text-[5vmin]">
-          Red Bull
-        </div>
-        <div className=" flex flex-col justify-center items-start gap-[1vmax]">
-          <div className="flex justify-start items-center gap-[1.5vmax]">
-            <div>
-              <Image
-                className="h-[6vmax] w-[6vmax] rounded-[100%]"
-                src={Verstappen}
-                alt="Max Verstappen"
-              ></Image>
-            </div>
-            <div className="flex justify-center items-start flex-col gap-[.3vmax]">
-              <div className="flex justify-center items-center gap-[.7vmax]">
-                <div className="h-[2.4vmax] w-[.5vmax] bg-redBull"></div>
-                <div className="font-f1regular text-white text-[2.5vmin] leading-tight">
-                  Max
-                  <br />
-                  Verstappen
-                </div>
-              </div>
-              <div className="flex justify-center items-center gap-[.5vmax]">
-                <div>
-                  <Image
-                    className=" w-[4.2vmin] rounded-[.6vmin]"
-                    src={Netherlands}
-                    alt="Netherlands flag"
-                  ></Image>
-                </div>
-                <div className="text-white font-f1bold text-[2.3vmin]">NED</div>
-              </div>
-            </div>
-          </div>
-          <div className="flex justify-start items-center gap-[1.5vmax]">
-            <div>
-              <Image
-                className="h-[6vmax] w-[6vmax] rounded-[100%]"
-                src={Perez}
-                alt="Sergio Pérez"
-              ></Image>
-            </div>
-            <div className="flex justify-center items-start flex-col gap-[.3vmax]">
-              <div className="flex justify-center items-center gap-[.7vmax]">
-                <div className="h-[2.4vmax] w-[.5vmax] bg-redBull"></div>
-                <div className="font-f1regular text-white text-[2.5vmin] leading-tight">
-                  Sergio
-                  <br />
-                  Pérez
-                </div>
-              </div>
-              <div className="flex justify-center items-center gap-[.5vmax]">
-                <div>
-                  <Image
-                    className="w-[4.2vmin] rounded-[.6vmin]"
-                    src={Mexico}
-                    alt="Mexico flag"
-                  ></Image>
-                </div>
-                <div className="text-white font-f1bold text-[2.3vmin]">MEX</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <CardComponent teamObject={TeamsData[0]}></CardComponent>
     </div>
   )
 }

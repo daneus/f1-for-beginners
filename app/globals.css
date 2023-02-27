@@ -70,10 +70,18 @@ html,
   animation: glowRedBull 0.5s ease-in-out infinite alternate;
 }
 
+.redBull {
+  background-color: #3671c6;
+}
+
 .ferrari-title {
   text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #f91536, 0 0 3.8vmin #f91536,
     0 0 5.5vmin #f91536, 0 0 9vmin #f91536;
   animation: glowFerrari 0.5s ease-in-out infinite alternate;
+}
+
+.ferrari {
+  background-color: #f91536;
 }
 
 .mercedes-title {
@@ -82,10 +90,18 @@ html,
   animation: glowMercedes 0.5s ease-in-out infinite alternate;
 }
 
+.mercedes {
+  background-color: #6cd3bf;
+}
+
 .alpine-title {
   text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #2293d1, 0 0 3.8vmin #2293d1,
     0 0 5.5vmin #2293d1, 0 0 9vmin #2293d1;
   animation: glowAlpine 0.5s ease-in-out infinite alternate;
+}
+
+.alpine {
+  background-color: #2293d1;
 }
 
 .mcLaren-title {
@@ -94,10 +110,18 @@ html,
   animation: glowMcLaren 0.5s ease-in-out infinite alternate;
 }
 
-.astonMartin-title {
+.mcLaren {
+  background-color: #f58020;
+}
+
+.alfaRomeo-title {
   text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #c92d4b, 0 0 3.8vmin #c92d4b,
     0 0 5.5vmin #c92d4b, 0 0 9vmin #c92d4b;
-  animation: glowAstonMartin 0.5s ease-in-out infinite alternate;
+  animation: glowAlfaRomeo 0.5s ease-in-out infinite alternate;
+}
+
+.alfaRomeo {
+  background-color: #c92d4b;
 }
 
 .astonMartin-title {
@@ -106,10 +130,18 @@ html,
   animation: glowAstonMartin 0.5s ease-in-out infinite alternate;
 }
 
+.astonMartin {
+  background-color: #358c75;
+}
+
 .haas-title {
   text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #6d6d6d, 0 0 3.8vmin #6d6d6d,
     0 0 5.5vmin #6d6d6d, 0 0 9vmin #6d6d6d;
   animation: glowHaas 0.5s ease-in-out infinite alternate;
+}
+
+.haas {
+  background-color: #b6babd;
 }
 
 .alphaTauri-title {
@@ -118,10 +150,18 @@ html,
   animation: glowAlphaTauri 0.5s ease-in-out infinite alternate;
 }
 
+.alphaTauri {
+  background-color: #5e8faa;
+}
+
 .williams-title {
   text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #2596af, 0 0 3.8vmin #2596af,
     0 0 5.5vmin #2596af, 0 0 9vmin #2596af;
   animation: glowWilliams 0.5s ease-in-out infinite alternate;
+}
+
+.williams {
+  background-color: #37bedd;
 }
 
 @keyframes glowRedBull {
@@ -179,7 +219,7 @@ html,
   }
 }
 
-@keyframes glowMcLaren {
+@keyframes glowAlfaRomeo {
   100% {
     text-shadow: 0 0 0.7vmin #fff, 0 0 1vmin #c92d4b, 0 0 2vmin #c92d4b,
       0 0 4vmin #c92d4b, 0 0 6vmin #c92d4b;
@@ -190,7 +230,7 @@ html,
   }
 }
 
-@keyframes glowMcLaren {
+@keyframes glowAstonMartin {
   100% {
     text-shadow: 0 0 0.7vmin #fff, 0 0 1vmin #358c75, 0 0 2vmin #358c75,
       0 0 4vmin #358c75, 0 0 6vmin #358c75;
