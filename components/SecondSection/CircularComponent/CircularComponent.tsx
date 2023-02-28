@@ -18,9 +18,36 @@ import WilliamsLogo from '../../../public/logos/constructors/Williams.svg'
 
 import TeamsData from '../../../data/TeamsData'
 import CardComponent from '../CardComponent/CardComponent'
+import { SelectedStatus } from '../../../interfaces/TeamData'
+
+const containerVariants = {
+  selected: (selectedBG: string) => ({
+    backgroundColor: selectedBG,
+    transition: { delay: 0.9, duration: 0.4 }
+  }),
+  unselected: {
+    backgroundColor: '#1f1f1f',
+    transition: { delay: 0.9, duration: 0.4 }
+  }
+}
 
 const CircularComponent: React.FC = () => {
   const [teamIndex, setTeamIndex] = useState<number>(0)
+
+  const teamsStatus: SelectedStatus = {
+    isRBActive: true,
+    isFActive: false,
+    isMActive: false,
+    isAActive: false,
+    isMLActive: false,
+    isARActive: false,
+    isAMActive: false,
+    isHActive: false,
+    isATActive: false,
+    isWActive: false
+  }
+
+  const [selectedStatus, setSelectedStatus] = useState(teamsStatus)
 
   return (
     <div className="my-[7.6vmax] w-[78.9vmin] h-[75vmin] mx-auto relative flex justify-center items-center">
@@ -35,9 +62,16 @@ const CircularComponent: React.FC = () => {
           setTimeout(() => {
             setTeamIndex(0)
           }, 400)
+          setSelectedStatus(teamsStatus)
         }}
       >
-        <div className="fade-circle"></div>
+        <motion.div
+          className="fade-circle"
+          custom={'#09377A'}
+          variants={containerVariants}
+          animate={selectedStatus.isRBActive ? 'selected' : 'unselected'}
+          initial={false}
+        ></motion.div>
         <Image
           priority
           className="w-[55%]"
@@ -56,9 +90,19 @@ const CircularComponent: React.FC = () => {
           setTimeout(() => {
             setTeamIndex(1)
           }, 400)
+          setSelectedStatus({
+            ...teamsStatus,
+            isRBActive: false,
+            isFActive: true
+          })
         }}
       >
-        <div className="fade-circle"></div>
+        <motion.div
+          custom={'#520014'}
+          variants={containerVariants}
+          animate={selectedStatus.isFActive ? 'selected' : 'unselected'}
+          className="fade-circle"
+        ></motion.div>
         <Image
           priority
           className="h-[40%]"
@@ -77,9 +121,19 @@ const CircularComponent: React.FC = () => {
           setTimeout(() => {
             setTeamIndex(9)
           }, 400)
+          setSelectedStatus({
+            ...teamsStatus,
+            isRBActive: false,
+            isWActive: true
+          })
         }}
       >
-        <div className="fade-circle"></div>
+        <motion.div
+          custom={'#124652'}
+          variants={containerVariants}
+          animate={selectedStatus.isWActive ? 'selected' : 'unselected'}
+          className="fade-circle"
+        ></motion.div>
         <Image
           priority
           className="h-[35%]"
@@ -98,12 +152,22 @@ const CircularComponent: React.FC = () => {
           setTimeout(() => {
             setTeamIndex(2)
           }, 400)
+          setSelectedStatus({
+            ...teamsStatus,
+            isRBActive: false,
+            isMActive: true
+          })
         }}
       >
-        <div className="fade-circle"></div>
+        <motion.div
+          custom={'#0A5244'}
+          variants={containerVariants}
+          animate={selectedStatus.isMActive ? 'selected' : 'unselected'}
+          className="fade-circle"
+        ></motion.div>
         <Image
           priority
-          className="w-[42.5%]"
+          className="w-[45%]"
           src={MercedesLogo}
           alt={'Mercedes Logo'}
         ></Image>
@@ -119,9 +183,19 @@ const CircularComponent: React.FC = () => {
           setTimeout(() => {
             setTeamIndex(8)
           }, 400)
+          setSelectedStatus({
+            ...teamsStatus,
+            isRBActive: false,
+            isATActive: true
+          })
         }}
       >
-        <div className="fade-circle"></div>
+        <motion.div
+          custom={'#3A515F'}
+          variants={containerVariants}
+          animate={selectedStatus.isATActive ? 'selected' : 'unselected'}
+          className="fade-circle"
+        ></motion.div>
         <Image
           priority
           className="w-[52.5%]"
@@ -140,9 +214,19 @@ const CircularComponent: React.FC = () => {
           setTimeout(() => {
             setTeamIndex(3)
           }, 400)
+          setSelectedStatus({
+            ...teamsStatus,
+            isRBActive: false,
+            isAActive: true
+          })
         }}
       >
-        <div className="fade-circle"></div>
+        <motion.div
+          custom={'#165B81'}
+          variants={containerVariants}
+          animate={selectedStatus.isAActive ? 'selected' : 'unselected'}
+          className="fade-circle"
+        ></motion.div>
         <Image
           priority
           className="w-[52.5%]"
@@ -161,12 +245,22 @@ const CircularComponent: React.FC = () => {
           setTimeout(() => {
             setTeamIndex(7)
           }, 400)
+          setSelectedStatus({
+            ...teamsStatus,
+            isRBActive: false,
+            isHActive: true
+          })
         }}
       >
-        <div className="fade-circle"></div>
+        <motion.div
+          custom={'#565859'}
+          variants={containerVariants}
+          animate={selectedStatus.isHActive ? 'selected' : 'unselected'}
+          className="fade-circle"
+        ></motion.div>
         <Image
           priority
-          className="w-[50%]"
+          className="w-[57.5%]"
           src={HaasLogo}
           alt={'Haas Logo'}
         ></Image>
@@ -182,9 +276,19 @@ const CircularComponent: React.FC = () => {
           setTimeout(() => {
             setTeamIndex(4)
           }, 400)
+          setSelectedStatus({
+            ...teamsStatus,
+            isRBActive: false,
+            isMLActive: true
+          })
         }}
       >
-        <div className="fade-circle"></div>
+        <motion.div
+          custom={'#462000'}
+          variants={containerVariants}
+          animate={selectedStatus.isMLActive ? 'selected' : 'unselected'}
+          className="fade-circle"
+        ></motion.div>
         <Image
           priority
           className="w-[45%]"
@@ -203,9 +307,19 @@ const CircularComponent: React.FC = () => {
           setTimeout(() => {
             setTeamIndex(6)
           }, 400)
+          setSelectedStatus({
+            ...teamsStatus,
+            isRBActive: false,
+            isAMActive: true
+          })
         }}
       >
-        <div className="fade-circle"></div>
+        <motion.div
+          custom={'#003F2E'}
+          variants={containerVariants}
+          animate={selectedStatus.isAMActive ? 'selected' : 'unselected'}
+          className="fade-circle"
+        ></motion.div>
         <Image
           priority
           className="w-[60%] h-auto"
@@ -224,12 +338,22 @@ const CircularComponent: React.FC = () => {
           setTimeout(() => {
             setTeamIndex(5)
           }, 400)
+          setSelectedStatus({
+            ...teamsStatus,
+            isRBActive: false,
+            isARActive: true
+          })
         }}
       >
-        <div className="fade-circle"></div>
+        <motion.div
+          custom={'#5A1220'}
+          variants={containerVariants}
+          animate={selectedStatus.isARActive ? 'selected' : 'unselected'}
+          className="fade-circle"
+        ></motion.div>
         <Image
           priority
-          className="h-[50%]"
+          className="h-[62.5%]"
           src={AlfaRomeoLogo}
           alt={'Alfa Romeo Logo'}
         ></Image>
