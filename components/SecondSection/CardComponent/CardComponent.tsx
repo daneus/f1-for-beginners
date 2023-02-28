@@ -1,13 +1,37 @@
 import Image from 'next/image'
+import { motion } from 'framer-motion'
+
 import { TeamData } from '../../../interfaces/TeamData'
 
 interface Props {
   teamObject: TeamData
 }
 
+const cardVariants = {
+  initial: {
+    clipPath: 'polygon(0 0, 0 -50%, 0 100%, 0% 110%)',
+    transition: { duration: 0.4, ease: 'easeOut' }
+  },
+  animate: {
+    clipPath: 'polygon(0 0, 100% -50%, 100% 100%, 0 110%)',
+    transition: { duration: 0.4, ease: 'easeInOut', delay: 0.5 }
+  },
+  exit: {
+    clipPath: 'polygon(100% 0, 100% -50%, 100% 100%, 100% 110%)',
+    transition: { duration: 0.4, ease: 'easeOut' }
+  }
+}
+
 const CardComponent: React.FC<Props> = teamObject => {
   return (
-    <div className="absolute h-[54.6%] w-[52%] flex justify-center items-center flex-col gap-[3vmax]">
+    <motion.div
+      key="card"
+      variants={cardVariants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      className="absolute h-[54.6%] w-[52%] flex justify-center items-center flex-col gap-[3vmax]"
+    >
       <div
         className={`${teamObject.teamObject.shortName}-title text-white font-f1bold text-[5vmin]`}
       >
@@ -19,9 +43,10 @@ const CardComponent: React.FC<Props> = teamObject => {
             <Image
               priority
               className="rounded-[100%]"
-              src={`/images/drivers/${teamObject.teamObject.firstDriverLastName}.svg`}
+              src={`/images/drivers/${teamObject.teamObject.firstDriverLastName}.jpg`}
               alt={`${teamObject.teamObject.firstDriverName} ${teamObject.teamObject.firstDriverLastName}`}
               fill={true}
+              quality={1}
             ></Image>
           </div>
           <div className="flex justify-center items-start flex-col gap-[.3vmax]">
@@ -43,6 +68,7 @@ const CardComponent: React.FC<Props> = teamObject => {
                   src={`/images/flags/${teamObject.teamObject.firstDriverCountry}.jpg`}
                   alt={`${teamObject.teamObject.firstDriverCountry} flag`}
                   fill={true}
+                  quality={1}
                 ></Image>
               </div>
               <div className="text-white font-f1bold text-[2.3vmin]">
@@ -56,9 +82,10 @@ const CardComponent: React.FC<Props> = teamObject => {
             <Image
               priority
               className="rounded-[100%]"
-              src={`/images/drivers/${teamObject.teamObject.secondDriverLastName}.svg`}
+              src={`/images/drivers/${teamObject.teamObject.secondDriverLastName}.jpg`}
               alt={`${teamObject.teamObject.secondDriverName} ${teamObject.teamObject.secondDriverLastName}`}
               fill={true}
+              quality={1}
             ></Image>
           </div>
           <div className="flex justify-center items-start flex-col gap-[.3vmax]">
@@ -80,6 +107,7 @@ const CardComponent: React.FC<Props> = teamObject => {
                   src={`/images/flags/${teamObject.teamObject.secondDriverCountry}.jpg`}
                   alt={`${teamObject.teamObject.secondDriverCountry} flag`}
                   fill={true}
+                  quality={1}
                 ></Image>
               </div>
               <div className="text-white font-f1bold text-[2.3vmin]">
@@ -89,7 +117,7 @@ const CardComponent: React.FC<Props> = teamObject => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
