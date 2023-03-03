@@ -9,7 +9,7 @@ const Header: React.FC = () => {
         id="container"
         className="h-full relative z-[-1] flex justify-center items-center"
       >
-        <div className="absolute w-full h-full bg-dim shadow-[inset_0px_-50px_60px_0_rgba(0,0,0,.8)]"></div>
+        <div className="absolute w-full h-full bg-dim shadow-[inset_0px_-9vmin_11vmin_0_rgba(0,0,0,.8)]"></div>
         <Image
           priority
           quality={1}
@@ -20,6 +20,7 @@ const Header: React.FC = () => {
         ></Image>
         <div className="absolute w-full flex flex-col justify-center items-center my-auto">
           <Image
+            priority
             className="w-[32vmax]"
             src={F1Logo}
             alt={'Formula 1 Logo'}
