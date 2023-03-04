@@ -71,7 +71,7 @@ html,
 .redBull-title {
   text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #3671c6, 0 0 3.8vmin #3671c6,
     0 0 5.5vmin #3671c6, 0 0 9vmin #3671c6;
-  animation: glowRedBull 0.5s ease-in-out infinite alternate;
+  animation: glowRedBull 0.35s ease-in-out infinite alternate;
 }
 
 .redBull {
@@ -81,7 +81,7 @@ html,
 .ferrari-title {
   text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #f91536, 0 0 3.8vmin #f91536,
     0 0 5.5vmin #f91536, 0 0 9vmin #f91536;
-  animation: glowFerrari 0.5s ease-in-out infinite alternate;
+  animation: glowFerrari 0.35s ease-in-out infinite alternate;
 }
 
 .ferrari {
@@ -91,7 +91,7 @@ html,
 .mercedes-title {
   text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #30aa92, 0 0 3.8vmin #30aa92,
     0 0 5.5vmin #30aa92, 0 0 9vmin #30aa92;
-  animation: glowMercedes 0.5s ease-in-out infinite alternate;
+  animation: glowMercedes 0.35s ease-in-out infinite alternate;
 }
 
 .mercedes {
@@ -101,7 +101,7 @@ html,
 .alpine-title {
   text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #2293d1, 0 0 3.8vmin #2293d1,
     0 0 5.5vmin #2293d1, 0 0 9vmin #2293d1;
-  animation: glowAlpine 0.5s ease-in-out infinite alternate;
+  animation: glowAlpine 0.35s ease-in-out infinite alternate;
 }
 
 .alpine {
@@ -111,7 +111,7 @@ html,
 .mcLaren-title {
   text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #f58020, 0 0 3.8vmin #f58020,
     0 0 5.5vmin #f58020, 0 0 9vmin #f58020;
-  animation: glowMcLaren 0.5s ease-in-out infinite alternate;
+  animation: glowMcLaren 0.35s ease-in-out infinite alternate;
 }
 
 .mcLaren {
@@ -121,7 +121,7 @@ html,
 .alfaRomeo-title {
   text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #c92d4b, 0 0 3.8vmin #c92d4b,
     0 0 5.5vmin #c92d4b, 0 0 9vmin #c92d4b;
-  animation: glowAlfaRomeo 0.5s ease-in-out infinite alternate;
+  animation: glowAlfaRomeo 0.35s ease-in-out infinite alternate;
 }
 
 .alfaRomeo {
@@ -131,7 +131,7 @@ html,
 .astonMartin-title {
   text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #358c75, 0 0 3.8vmin #358c75,
     0 0 5.5vmin #358c75, 0 0 9vmin #358c75;
-  animation: glowAstonMartin 0.5s ease-in-out infinite alternate;
+  animation: glowAstonMartin 0.35s ease-in-out infinite alternate;
 }
 
 .astonMartin {
@@ -141,7 +141,7 @@ html,
 .haas-title {
   text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #6d6d6d, 0 0 3.8vmin #6d6d6d,
     0 0 5.5vmin #6d6d6d, 0 0 9vmin #6d6d6d;
-  animation: glowHaas 0.5s ease-in-out infinite alternate;
+  animation: glowHaas 0.35s ease-in-out infinite alternate;
 }
 
 .haas {
@@ -151,7 +151,7 @@ html,
 .alphaTauri-title {
   text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #5e8faa, 0 0 3.8vmin #5e8faa,
     0 0 5.5vmin #5e8faa, 0 0 9vmin #5e8faa;
-  animation: glowAlphaTauri 0.5s ease-in-out infinite alternate;
+  animation: glowAlphaTauri 0.35s ease-in-out infinite alternate;
 }
 
 .alphaTauri {
@@ -161,7 +161,7 @@ html,
 .williams-title {
   text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #2596af, 0 0 3.8vmin #2596af,
     0 0 5.5vmin #2596af, 0 0 9vmin #2596af;
-  animation: glowWilliams 0.5s ease-in-out infinite alternate;
+  animation: glowWilliams 0.35s ease-in-out infinite alternate;
 }
 
 .williams {
@@ -278,7 +278,7 @@ html,
   }
 }
 
-.pole {
+.important {
   text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #f91536, 0 0 3.8vmin #f91536,
     0 0 5.5vmin #f91536, 0 0 9vmin #f91536;
   animation: glowFerrari 0.2s ease-in-out infinite alternate;

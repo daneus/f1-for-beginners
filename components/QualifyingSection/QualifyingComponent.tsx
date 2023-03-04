@@ -349,7 +349,8 @@ const QualifyingComponent: React.FC = () => {
             <div className="trackSpace h-[100vh] w-auto grow flex justify-center items-center">
               <div className="text-[2.2vmax] font-f1regular text-center px-[2.5vmax]">
                 The fastest driver in <span className="font-f1bold">Q3</span>{' '}
-                gets <span className="font-f1bold pole">pole position</span> and
+                gets{' '}
+                <span className="font-f1bold important">pole position</span> and
                 starts the race at the front of the grid.
               </div>
             </div>

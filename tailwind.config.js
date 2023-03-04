@@ -18,6 +18,7 @@ module.exports = {
       },
       colors: {
         dim: 'rgba(0, 0, 0, 0.7)',
+        'dim-less': 'rgba(0,0,0,.3)',
         mercedes: '#6CD3BF',
         alpine: '#2293D1',
         haas: '#B6BABD',
