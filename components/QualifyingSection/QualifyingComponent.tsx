@@ -6,6 +6,7 @@ import raceCar from '../../public/images/car.png'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useLayoutEffect, useRef } from 'react'
+import SprintComponent from '../SprintSection/SprintComponent'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -115,7 +116,7 @@ const QualifyingComponent: React.FC = () => {
 
   return (
     <>
-      <div className="text-[3.1vmax] font-f1bold text-white important self-end p-[5vmax]">
+      <div className="text-[3.1vmax] font-f1bold text-white important self-end py-[4vmax] pl-[3vmax]">
         Qualifying session
       </div>
       <div className="w-[100vw] h-[100vh] relative bg-black">
@@ -349,8 +350,8 @@ const QualifyingComponent: React.FC = () => {
             <div className="h-[100vh] aspect-[360/1900]"></div>
             <div className="h-[100vh] w-auto grow flex justify-center items-center">
               <div className="text-[2.2vmax] font-f1regular text-center px-[2.5vmax]">
-                In this fierce battle there are no eliminations, and the drivers
-                are positioned on the grid according to their lap times.
+                In this fierce battle there are no eliminations, the drivers are
+                positioned on the grid according to their lap times.
               </div>
             </div>
           </div>
@@ -361,10 +362,11 @@ const QualifyingComponent: React.FC = () => {
                 The fastest driver in <span className="font-f1bold">Q3</span>{' '}
                 gets{' '}
                 <span className="font-f1bold important">pole position</span> and
-                starts the race at the front of the grid.
+                starts the sprint or race at the front of the grid.
               </div>
             </div>
           </div>
+          <SprintComponent />
         </div>
       </div>
     </>

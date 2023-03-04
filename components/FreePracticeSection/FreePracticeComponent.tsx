@@ -4,7 +4,7 @@ import Practice2 from '../../public/images/Practice2.jpg'
 
 const FreePracticeComponent: React.FC = () => {
   return (
-    <div className="my-[8vmax] w-full flex flex-col justify-center">
+    <div className="mt-[8vmax] mb-[4vmax] w-full flex flex-col justify-center">
       <div className="text-[3.1vmax] font-f1bold text-white important self-end pr-[3vmax] mb-[3.5vmax]">
         Practice sessions
       </div>
