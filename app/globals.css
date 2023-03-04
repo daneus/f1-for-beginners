@@ -283,3 +283,43 @@ html,
     0 0 5.5vmin #f91536, 0 0 9vmin #f91536;
   animation: glowFerrari 0.2s ease-in-out infinite alternate;
 }
+
+.good {
+  text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #f91536, 0 0 3.8vmin #f91536,
+    0 0 5.5vmin #f91536, 0 0 9vmin #f91536;
+  animation: glowGood 0.4s ease-in-out infinite alternate;
+}
+
+.medium {
+  text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #f91536, 0 0 3.8vmin #f91536,
+    0 0 5.5vmin #f91536, 0 0 9vmin #f91536;
+  animation: glowMedium 0.4s ease-in-out infinite alternate;
+}
+
+.warning {
+  text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #f91536, 0 0 3.8vmin #f91536,
+    0 0 5.5vmin #f91536, 0 0 9vmin #f91536;
+  animation: glowMcLaren 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes glowGood {
+  100% {
+    text-shadow: 0 0 0.7vmin #fff, 0 0 1vmin #25c95b, 0 0 2vmin #25c95b,
+      0 0 4vmin #25c95b, 0 0 6vmin #25c95b;
+  }
+  0% {
+    text-shadow: 0 0 0.7vmin #fff, 0 0 1.8vmin #25c95b, 0 0 2.8vmin #25c95b,
+      0 0 4.8vmin #25c95b, 0 0 7.8vmin #25c95b;
+  }
+}
+
+@keyframes glowMedium {
+  100% {
+    text-shadow: 0 0 0.7vmin #fff, 0 0 1vmin #cac700, 0 0 2vmin #cac700,
+      0 0 4vmin #cac700, 0 0 6vmin #cac700;
+  }
+  0% {
+    text-shadow: 0 0 0.7vmin #fff, 0 0 1.8vmin #cac700, 0 0 2.8vmin #cac700,
+      0 0 4.8vmin #cac700, 0 0 7.8vmin #cac700;
+  }
+}

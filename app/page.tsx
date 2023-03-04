@@ -1,7 +1,8 @@
+import FreePracticeComponent from '../components/FreePracticeSection/FreePracticeComponent'
 import GrandPrixComponent from '../components/GrandPrixSection/GrandPrixComponent'
 import Header from '../components/Header/Header'
 import SecondSection from '../components/SecondSection/SecondSection'
-// import QualifyingComponent from '../components/QualifyingSection/QualifyingComponent'
+import QualifyingComponent from '../components/QualifyingSection/QualifyingComponent'
 
 const Page: React.FC = () => {
   return (
@@ -9,6 +10,8 @@ const Page: React.FC = () => {
       <Header />
       <SecondSection />
       <GrandPrixComponent />
+      <FreePracticeComponent />
+      <QualifyingComponent />
     </div>
   )
 }

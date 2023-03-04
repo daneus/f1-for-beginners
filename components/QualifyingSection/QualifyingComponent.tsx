@@ -115,7 +115,9 @@ const QualifyingComponent: React.FC = () => {
 
   return (
     <>
-      <div className="text-5xl text-white font-f1bold">Qualifying</div>
+      <div className="text-[3.1vmax] font-f1bold text-white important self-end p-[5vmax]">
+        Qualifying session
+      </div>
       <div className="w-[100vw] h-[100vh] relative bg-black">
         <div ref={trackRef} className="absolute h-[100vh] aspect-[360/1900]">
           <Image src={raceTrack} alt="Racing track" fill={true}></Image>
@@ -286,8 +288,8 @@ const QualifyingComponent: React.FC = () => {
             <div className="h-[100vh] w-auto flex grow justify-center items-center">
               <div className="text-[2.2vmax] font-f1regular text-center px-[2.5vmax]">
                 In <span className="font-f1bold">Q1</span>, the drivers have{' '}
-                <span className="font-f1bold text-[#58da58]">18 minutes</span>{' '}
-                to set their lap times.
+                <span className="font-f1bold good">18 minutes</span> to set
+                their lap times.
               </div>
             </div>
           </div>
@@ -296,7 +298,9 @@ const QualifyingComponent: React.FC = () => {
             <div className="q3-breakpoint h-[100vh] w-auto grow flex justify-center items-center">
               <div className="text-[2.2vmax] font-f1regular text-center px-[2.5vmax]">
                 The slowest five drivers are{' '}
-                <span className="font-f1bold text-[#FF0000]">eliminated</span>{' '}
+                <span className="font-f1bold text-white important">
+                  eliminated
+                </span>{' '}
                 and are placed at the bottom of the grid according to their lap
                 times.
               </div>
@@ -308,7 +312,9 @@ const QualifyingComponent: React.FC = () => {
               <div className="text-[2.2vmax] font-f1regular text-center px-[2.5vmax]">
                 In <span className="font-f1bold">Q2</span>, the remaining 15
                 drivers have{' '}
-                <span className="font-f1bold text-[#fffc5d]">15 minutes</span>{' '}
+                <span className="font-f1bold text-white medium">
+                  15 minutes
+                </span>{' '}
                 to set their lap times.
               </div>
             </div>
@@ -318,7 +324,9 @@ const QualifyingComponent: React.FC = () => {
             <div className="q2-breakpoint h-[100vh] w-auto grow flex justify-center items-center">
               <div className="text-[2.2vmax] font-f1regular text-center px-[2.5vmax]">
                 Again, the slowest five drivers are{' '}
-                <span className="font-f1bold text-[#FF0000]">eliminated</span>{' '}
+                <span className="font-f1bold text-white important">
+                  eliminated
+                </span>{' '}
                 and are placed at the middle of the grid according to their lap
                 times.
               </div>
@@ -330,7 +338,9 @@ const QualifyingComponent: React.FC = () => {
               <div className="text-[2.2vmax] font-f1regular text-center px-[2.5vmax]">
                 In <span className="font-f1bold">Q3</span>, the remaining 10
                 drivers have{' '}
-                <span className="font-f1bold text-[#ffa148]">12 minutes</span>{' '}
+                <span className="font-f1bold text-white warning">
+                  12 minutes
+                </span>{' '}
                 to set their lap times.
               </div>
             </div>
