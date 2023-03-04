@@ -34,6 +34,10 @@ html,
   perspective: 10px;
 }
 
+#wrapper.perspective-remover {
+  perspective: none !important;
+}
+
 #container {
   transform-style: preserve-3d;
 }
@@ -272,4 +276,10 @@ html,
     text-shadow: 0 0 0.7vmin #fff, 0 0 1.8vmin #2596af, 0 0 2.8vmin #2596af,
       0 0 4.8vmin #2596af, 0 0 7.8vmin #2596af;
   }
+}
+
+.pole {
+  text-shadow: 0 0 1vmin #fff, 0 0 2.8vmin #f91536, 0 0 3.8vmin #f91536,
+    0 0 5.5vmin #f91536, 0 0 9vmin #f91536;
+  animation: glowFerrari 0.2s ease-in-out infinite alternate;
 }

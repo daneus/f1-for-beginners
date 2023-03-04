@@ -5,14 +5,12 @@ import QualifyingComponent from '../components/QualifyingSection/QualifyingCompo
 
 const Page: React.FC = () => {
   return (
-    <>
-      <div id="wrapper" className="h-screen test overflow-x-hidden">
-        <Header />
-        <SecondSection />
-        <GrandPrixSection />
-        <QualifyingComponent />
-      </div>
-    </>
+    <div id="wrapper" className="h-screen overflow-x-hidden">
+      <Header />
+      <SecondSection />
+      <GrandPrixSection />
+      <QualifyingComponent />
+    </div>
   )
 }
 
