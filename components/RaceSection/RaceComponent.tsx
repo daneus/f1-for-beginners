@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Mexico from '../../public/images/Mexico.avif'
 import RB19 from '../../public/images/RB19.jpg'
 import DRSComponent from '../DRSSection/DRSComponent'
+import FinalComponent from '../FinalSection/FinalComponent'
 import FlagComponent from '../FlagSection/FlagComponent'
 import PitStopComponent from '../PitStopSection/PitStopComponent'
 import PointsComponent from '../PointsSection/PointsComponent'
@@ -47,6 +48,7 @@ const RaceComponent: React.FC = () => {
       <DRSComponent />
       <FlagComponent />
       <PointsComponent />
+      <FinalComponent />
     </>
   )
 }
