@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Mexico from '../../public/images/Mexico.avif'
 import RB19 from '../../public/images/RB19.jpg'
+import DRSComponent from '../DRSSection/DRSComponent'
 import PitStopComponent from '../PitStopSection/PitStopComponent'
 import TyreComponent from './TyreComponent'
 
@@ -41,6 +42,7 @@ const RaceComponent: React.FC = () => {
       </div>
       <TyreComponent />
       <PitStopComponent />
+      <DRSComponent />
     </>
   )
 }
