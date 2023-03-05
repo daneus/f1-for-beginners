@@ -18,11 +18,7 @@ const DRSComponent: React.FC = () => {
           fill={true}
         ></Image>
       </div>
-      <div className="mt-[1vmax] px-[2vmax] w-[60%] text-[1.2vmax] font-f1regular text-white text-center mx-auto">
-        {/* <span className="font-f1bold important whitespace-nowrap">
-          Fastest pit stop in history
-        </span>
-        <br /> */}
+      <div className="mt-[1vmax] px-[2vmax] w-[60%] text-[1.2vmax] font-f1regular text-white text-center mx-auto warning">
         Can only be used in certain parts of a track.
       </div>
     </div>
