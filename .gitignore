@@ -14,7 +14,6 @@ dist-ssr
 .next
 .prettierignore
 .prettierrc.json
-next.config.js
 
 # Editor directories and files
 .vscode/*
