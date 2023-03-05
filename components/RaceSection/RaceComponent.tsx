@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Mexico from '../../public/images/Mexico.avif'
+import Mexico from '../../public/images/Mexico.jpg'
 import RB19 from '../../public/images/RB19.jpg'
 import DRSComponent from '../DRSSection/DRSComponent'
 import FinalComponent from '../FinalSection/FinalComponent'
