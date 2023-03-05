@@ -6,7 +6,7 @@ const FinalComponent: React.FC = () => {
           You are all set!
           <br />
           Now you can enjoy watching{' '}
-          <span className="font-f1bold important">Formula 1</span>.
+          <span className="font-f1bold important">Formula 1</span>!
         </div>
       </div>
       <div className="w-screen h-[12vmax] bg-black"></div>

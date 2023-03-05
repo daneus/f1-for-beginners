@@ -8,6 +8,14 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useLayoutEffect, useRef } from 'react'
 import SprintComponent from '../SprintSection/SprintComponent'
 
+import quali1 from '../../public/images/quali1.jpg'
+import quali2 from '../../public/images/quali2.jpg'
+import quali3 from '../../public/images/quali3.jpg'
+import quali4 from '../../public/images/quali4.jpg'
+import quali5 from '../../public/images/quali5.jpg'
+import quali6 from '../../public/images/quali6.jpg'
+import quali7 from '../../public/images/quali7.webp'
+
 gsap.registerPlugin(ScrollTrigger)
 
 const QualifyingComponent: React.FC = () => {
@@ -120,7 +128,10 @@ const QualifyingComponent: React.FC = () => {
         Qualifying session
       </div>
       <div className="w-[100vw] h-[100vh] relative bg-black">
-        <div ref={trackRef} className="absolute h-[100vh] aspect-[360/1900]">
+        <div
+          ref={trackRef}
+          className="absolute h-[100vh] aspect-[360/1900] z-[10]"
+        >
           <Image
             priority
             src={raceTrack}
@@ -291,8 +302,18 @@ const QualifyingComponent: React.FC = () => {
         <div className="">
           <div className="flex items-center text-white h-[100vh] width-[100vw]">
             <div className="h-[100vh] aspect-[360/1900]"></div>
-            <div className="h-[100vh] w-auto flex grow justify-center items-center">
-              <div className="text-[2.2vmax] font-f1regular text-center px-[2.5vmax]">
+            <div className="h-[100vh] flex grow justify-center items-center relative">
+              <div className="absolute w-full h-full bg-dim z-[1]"></div>
+              <div className="absolute w-full h-full right">
+                <Image
+                  priority
+                  src={quali1}
+                  alt=""
+                  fill={true}
+                  className="object-cover"
+                ></Image>
+              </div>
+              <div className="text-[2.2vmax] font-f1regular text-center px-[2.5vmax] z-[10]">
                 In <span className="font-f1bold">Q1</span>, the drivers have{' '}
                 <span className="font-f1bold good">18 minutes</span> to set
                 their fastest lap times.
@@ -302,7 +323,17 @@ const QualifyingComponent: React.FC = () => {
           <div className="flex items-center text-white h-[100vh] width-[100vw]">
             <div className="h-[100vh] aspect-[360/1900]"></div>
             <div className="q3-breakpoint h-[100vh] w-auto grow flex justify-center items-center">
-              <div className="text-[2.2vmax] font-f1regular text-center px-[2.5vmax]">
+              <div className="absolute w-full h-full bg-dim z-[1]"></div>
+              <div className="absolute w-full h-full right">
+                <Image
+                  priority
+                  src={quali2}
+                  alt=""
+                  fill={true}
+                  className="object-cover"
+                ></Image>
+              </div>
+              <div className="text-[2.2vmax] font-f1regular text-center px-[2.5vmax] z-[10]">
                 The slowest five drivers are{' '}
                 <span className="font-f1bold text-white important">
                   eliminated
@@ -315,7 +346,17 @@ const QualifyingComponent: React.FC = () => {
           <div className="flex items-center text-white h-[100vh] width-[100vw]">
             <div className="h-[100vh] aspect-[360/1900]"></div>
             <div className="q3-safe-breakpoint h-[100vh] w-auto grow flex justify-center items-center">
-              <div className="text-[2.2vmax] font-f1regular text-center px-[2.5vmax]">
+              <div className="absolute w-full h-full bg-dim z-[1]"></div>
+              <div className="absolute w-full h-full right">
+                <Image
+                  priority
+                  src={quali3}
+                  alt=""
+                  fill={true}
+                  className="object-cover"
+                ></Image>
+              </div>
+              <div className="text-[2.2vmax] font-f1regular text-center px-[2.5vmax] z-[10]">
                 In <span className="font-f1bold">Q2</span>, the remaining 15
                 drivers have{' '}
                 <span className="font-f1bold text-white medium">
@@ -328,7 +369,17 @@ const QualifyingComponent: React.FC = () => {
           <div className="flex items-center text-white h-[100vh] width-[100vw]">
             <div className="h-[100vh] aspect-[360/1900]"></div>
             <div className="q2-breakpoint h-[100vh] w-auto grow flex justify-center items-center">
-              <div className="text-[2.2vmax] font-f1regular text-center px-[2.5vmax]">
+              <div className="absolute w-full h-full bg-dim z-[1]"></div>
+              <div className="absolute w-full h-full right">
+                <Image
+                  priority
+                  src={quali4}
+                  alt=""
+                  fill={true}
+                  className="object-cover"
+                ></Image>
+              </div>
+              <div className="text-[2.2vmax] font-f1regular text-center px-[2.5vmax] z-[10]">
                 Again, the slowest five drivers are{' '}
                 <span className="font-f1bold text-white important">
                   eliminated
@@ -341,7 +392,17 @@ const QualifyingComponent: React.FC = () => {
           <div className="flex items-center text-white h-[100vh] width-[100vw]">
             <div className="h-[100vh] aspect-[360/1900]"></div>
             <div className="q1-breakpoint h-[100vh] w-auto grow flex justify-center items-center">
-              <div className="text-[2.2vmax] font-f1regular text-center px-[2.5vmax]">
+              <div className="absolute w-full h-full bg-dim z-[1]"></div>
+              <div className="absolute w-full h-full right">
+                <Image
+                  priority
+                  src={quali5}
+                  alt=""
+                  fill={true}
+                  className="object-cover"
+                ></Image>
+              </div>
+              <div className="text-[2.2vmax] font-f1regular text-center px-[2.5vmax] z-[10]">
                 In <span className="font-f1bold">Q3</span>, the remaining 10
                 drivers have{' '}
                 <span className="font-f1bold text-white warning">
@@ -354,7 +415,17 @@ const QualifyingComponent: React.FC = () => {
           <div className="flex items-center text-white h-[100vh] width-[100vw]">
             <div className="h-[100vh] aspect-[360/1900]"></div>
             <div className="h-[100vh] w-auto grow flex justify-center items-center">
-              <div className="text-[2.2vmax] font-f1regular text-center px-[2.5vmax]">
+              <div className="absolute w-full h-full bg-dim z-[1]"></div>
+              <div className="absolute w-full h-full right">
+                <Image
+                  priority
+                  src={quali6}
+                  alt=""
+                  fill={true}
+                  className="object-cover"
+                ></Image>
+              </div>
+              <div className="text-[2.2vmax] font-f1regular text-center px-[2.5vmax] z-[10]">
                 In this fierce battle there are no eliminations, the drivers are
                 positioned on the grid according to their lap times.
               </div>
@@ -363,7 +434,17 @@ const QualifyingComponent: React.FC = () => {
           <div className="flex items-center text-white h-[100vh] width-[100vw]">
             <div className="h-[100vh] aspect-[360/1900]"></div>
             <div className="trackSpace h-[100vh] w-auto grow flex justify-center items-center">
-              <div className="text-[2.2vmax] font-f1regular text-center px-[2.5vmax]">
+              <div className="absolute w-full h-full bg-dim z-[1]"></div>
+              <div className="absolute w-full h-full right">
+                <Image
+                  priority
+                  src={quali7}
+                  alt=""
+                  fill={true}
+                  className="object-cover"
+                ></Image>
+              </div>
+              <div className="text-[2.2vmax] font-f1regular text-center px-[2.5vmax] z-[10]">
                 The fastest driver in <span className="font-f1bold">Q3</span>{' '}
                 gets{' '}
                 <span className="font-f1bold important">pole position</span> and
