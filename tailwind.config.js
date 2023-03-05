@@ -38,6 +38,10 @@ module.exports = {
         gradient: {
           '0%': { 'background-position': '0% center' },
           '100%': { 'background-position': '200% center' }
+        },
+        spin: {
+          from: { transform: 'rotate(0deg)' },
+          to: { transform: 'rotate(360deg)' }
         }
       }
     }

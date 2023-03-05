@@ -116,12 +116,17 @@ const QualifyingComponent: React.FC = () => {
 
   return (
     <>
-      <div className="text-[3.1vmax] font-f1bold text-white important self-end py-[4vmax] pl-[3vmax]">
+      <div className="w-[100vw] text-right text-[3.1vmax] font-f1bold text-white important py-[5vmax] pr-[3vmax]">
         Qualifying session
       </div>
       <div className="w-[100vw] h-[100vh] relative bg-black">
         <div ref={trackRef} className="absolute h-[100vh] aspect-[360/1900]">
-          <Image src={raceTrack} alt="Racing track" fill={true}></Image>
+          <Image
+            priority
+            src={raceTrack}
+            alt="Racing track"
+            fill={true}
+          ></Image>
           <div className="q2safe q3safe q1 w-[6vh] h-[6vh] absolute bottom-[85%] left-[10%]">
             <Image
               src={raceCar}
@@ -290,7 +295,7 @@ const QualifyingComponent: React.FC = () => {
               <div className="text-[2.2vmax] font-f1regular text-center px-[2.5vmax]">
                 In <span className="font-f1bold">Q1</span>, the drivers have{' '}
                 <span className="font-f1bold good">18 minutes</span> to set
-                their lap times.
+                their fastest lap times.
               </div>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Sprint1 from '../../public/images/Sprint1.jpg'
 import Sprint2 from '../../public/images/Sprint2.jpg'
+import RaceComponent from '../RaceSection/RaceComponent'
 
 const SprintComponent: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const SprintComponent: React.FC = () => {
           Sprint session
         </div>
         <div className="flex justify-center items-center">
-          <div className="text-white font-f1regular text-center text-[1.2vmax] sm:text-[2.2vmax] px-[2vmax]">
+          <div className="text-white font-f1regular text-center text-[1.2vmax] sm:text-[2.2vmax] px-[3vmax]">
             These occasional sessions determine the starting grid for the race
             but also award points towards the championship. Drivers start based
             on qualifying position.
@@ -39,50 +40,55 @@ const SprintComponent: React.FC = () => {
       </div>
       <div className="flex justify-center items-center text-white">
         <table>
-          <tr className="bg-[#FF0000]">
-            <th
-              className="px-[1.6vmax] py-[.8vmax] text-[1.8vmax] font-f1regular rounded-tl-[.8vmax] rounded-tr-[.8vmax]"
-              colSpan={2}
-            >
-              Points awarded by sprint race
-            </th>
-          </tr>
-          <tr className="text-center text-[1.6vmax] font-f1regular">
-            <td className="px-[2vmax] py-[1vmax] font-f1bold">1st</td>
-            <td className="px-[2vmax] py-[1vmax]">+8</td>
-          </tr>
-          <tr className="text-center text-[1.6vmax] font-f1regular bg-[#191919]">
-            <td className="px-[2vmax] py-[1vmax] font-f1bold">2nd</td>
-            <td className="px-[2vmax] py-[1vmax]">+7</td>
-          </tr>
-          <tr className="text-center text-[1.6vmax] font-f1regular">
-            <td className="px-[2vmax] py-[1vmax] font-f1bold">3rd</td>
-            <td className="px-[2vmax] py-[1vmax]">+6</td>
-          </tr>
-          <tr className="text-center text-[1.6vmax] font-f1regular bg-[#191919]">
-            <td className="px-[2vmax] py-[1vmax] font-f1bold">4th</td>
-            <td className="px-[2vmax] py-[1vmax]">+5</td>
-          </tr>
-          <tr className="text-center text-[1.6vmax] font-f1regular">
-            <td className="px-[2vmax] py-[1vmax] font-f1bold">5th</td>
-            <td className="px-[2vmax] py-[1vmax]">+4</td>
-          </tr>
-          <tr className="text-center text-[1.6vmax] font-f1regular bg-[#191919]">
-            <td className="px-[2vmax] py-[1vmax] font-f1bold">6th</td>
-            <td className="px-[2vmax] py-[1vmax]">+3</td>
-          </tr>
-          <tr className="text-center text-[1.6vmax] font-f1regular">
-            <td className="px-[2vmax] py-[1vmax] font-f1bold">7th</td>
-            <td className="px-[2vmax] py-[1vmax]">+2</td>
-          </tr>
-          <tr className="text-center text-[1.6vmax] font-f1regular bg-[#191919]">
-            <td className="px-[2vmax] py-[1vmax] font-f1bold rounded-bl-[.8vmax]">
-              8th
-            </td>
-            <td className="px-[2vmax] py-[1vmax] rounded-br-[.8vmax]">+1</td>
-          </tr>
+          <thead>
+            <tr className="bg-[#FF0000]">
+              <th
+                className="px-[1.6vmax] py-[.8vmax] text-[1.6vmax] font-f1regular rounded-tl-[.6vmax] rounded-tr-[.6vmax]"
+                colSpan={2}
+              >
+                Points awarded by sprint race
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="text-center text-[1.6vmax] font-f1regular">
+              <td className="px-[2vmax] py-[1vmax] font-f1bold">1st</td>
+              <td className="px-[2vmax] py-[1vmax]">+8</td>
+            </tr>
+            <tr className="text-center text-[1.6vmax] font-f1regular bg-[#191919]">
+              <td className="px-[2vmax] py-[1vmax] font-f1bold">2nd</td>
+              <td className="px-[2vmax] py-[1vmax]">+7</td>
+            </tr>
+            <tr className="text-center text-[1.6vmax] font-f1regular">
+              <td className="px-[2vmax] py-[1vmax] font-f1bold">3rd</td>
+              <td className="px-[2vmax] py-[1vmax]">+6</td>
+            </tr>
+            <tr className="text-center text-[1.6vmax] font-f1regular bg-[#191919]">
+              <td className="px-[2vmax] py-[1vmax] font-f1bold">4th</td>
+              <td className="px-[2vmax] py-[1vmax]">+5</td>
+            </tr>
+            <tr className="text-center text-[1.6vmax] font-f1regular">
+              <td className="px-[2vmax] py-[1vmax] font-f1bold">5th</td>
+              <td className="px-[2vmax] py-[1vmax]">+4</td>
+            </tr>
+            <tr className="text-center text-[1.6vmax] font-f1regular bg-[#191919]">
+              <td className="px-[2vmax] py-[1vmax] font-f1bold">6th</td>
+              <td className="px-[2vmax] py-[1vmax]">+3</td>
+            </tr>
+            <tr className="text-center text-[1.6vmax] font-f1regular">
+              <td className="px-[2vmax] py-[1vmax] font-f1bold">7th</td>
+              <td className="px-[2vmax] py-[1vmax]">+2</td>
+            </tr>
+            <tr className="text-center text-[1.6vmax] font-f1regular bg-[#191919]">
+              <td className="px-[2vmax] py-[1vmax] font-f1bold rounded-bl-[.6vmax]">
+                8th
+              </td>
+              <td className="px-[2vmax] py-[1vmax] rounded-br-[.6vmax]">+1</td>
+            </tr>
+          </tbody>
         </table>
       </div>
+      <RaceComponent />
     </>
   )
 }
