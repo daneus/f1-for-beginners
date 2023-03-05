@@ -4,6 +4,7 @@ import RB19 from '../../public/images/RB19.jpg'
 import DRSComponent from '../DRSSection/DRSComponent'
 import FlagComponent from '../FlagSection/FlagComponent'
 import PitStopComponent from '../PitStopSection/PitStopComponent'
+import PointsComponent from '../PointsSection/PointsComponent'
 import TyreComponent from './TyreComponent'
 
 const RaceComponent: React.FC = () => {
@@ -11,7 +12,7 @@ const RaceComponent: React.FC = () => {
     <>
       <div className="mt-[8vmax] mb-[4vmax] w-full flex flex-col justify-center">
         <div className="text-[3.1vmax] font-f1bold text-white important self-end pr-[3vmax] mb-[3.5vmax]">
-          Race sessions
+          Race session
         </div>
         <div className="flex justify-center items-center">
           <div className="relative w-[50vw] aspect-[3/2] self-start shrink-0 ">
@@ -45,6 +46,7 @@ const RaceComponent: React.FC = () => {
       <PitStopComponent />
       <DRSComponent />
       <FlagComponent />
+      <PointsComponent />
     </>
   )
 }

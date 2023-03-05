@@ -9,7 +9,7 @@ const FlagComponent: React.FC = () => {
     <div className="w-screen mt-[4vmax] pt-[2vw] bg-black">
       <div className="px-[2vmax] w-screen text-[2.2vmax] font-f1regular text-white text-center">
         During the race, the marshals can wave different{' '}
-        <span className="font-f1bold">flags</span>.<br />
+        <span className="font-f1bold important">flags</span>.<br />
         These are the most common ones:
       </div>
       <div className="relative w-[80vmin] mx-auto mt-[4vmax] flex flex-col gap-[3vmax]">

@@ -5,7 +5,8 @@ const DRSComponent: React.FC = () => {
   return (
     <div className="w-screen mt-[4vmax] pt-[2vw] bg-black">
       <div className="px-[2vmax] w-screen text-[2.2vmax] font-f1regular text-white text-center">
-        The <span className="font-f1bold">DRS</span> {'('}Drag Reduction System
+        The <span className="font-f1bold important">DRS</span> {'('}Drag
+        Reduction System
         {')'} is a mechanism that, when activated, opens the rear wing
         facilitating overtaking.
       </div>
