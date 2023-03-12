@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import BG1 from '../../public/images/BG1.svg'
+import BG1 from '../../public/images/BG1.jpg'
 import F1Logo from '../../public/logos/Formula1.svg'
 
 const Header: React.FC = () => {
