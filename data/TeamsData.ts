@@ -105,7 +105,7 @@ const TeamsData: TeamData[] = [
     firstDriverCountry: 'Japan',
     firstDriverCountryShort: 'JPN',
     secondDriverName: 'Nyck',
-    secondDriverLastName: 'De Vries',
+    secondDriverLastName: 'de Vries',
     secondDriverCountry: 'Netherlands',
     secondDriverCountryShort: 'NED'
   },
