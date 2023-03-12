@@ -45,7 +45,7 @@ const CardComponent: React.FC<Props> = teamObject => {
               src={`/images/drivers/${teamObject.teamObject.firstDriverLastName}.jpg`}
               alt={`${teamObject.teamObject.firstDriverName} ${teamObject.teamObject.firstDriverLastName}`}
               fill={true}
-              quality={1}
+              quality={50}
             ></Image>
           </div>
           <div className="flex justify-center items-start flex-col gap-[.3vmax]">
@@ -66,7 +66,7 @@ const CardComponent: React.FC<Props> = teamObject => {
                   src={`/images/flags/${teamObject.teamObject.firstDriverCountry}.jpg`}
                   alt={`${teamObject.teamObject.firstDriverCountry} flag`}
                   fill={true}
-                  quality={1}
+                  quality={50}
                 ></Image>
               </div>
               <div className="text-white font-f1bold text-[2.3vmin]">
@@ -82,7 +82,7 @@ const CardComponent: React.FC<Props> = teamObject => {
               src={`/images/drivers/${teamObject.teamObject.secondDriverLastName}.jpg`}
               alt={`${teamObject.teamObject.secondDriverName} ${teamObject.teamObject.secondDriverLastName}`}
               fill={true}
-              quality={1}
+              quality={50}
             ></Image>
           </div>
           <div className="flex justify-center items-start flex-col gap-[.3vmax]">
@@ -103,7 +103,7 @@ const CardComponent: React.FC<Props> = teamObject => {
                   src={`/images/flags/${teamObject.teamObject.secondDriverCountry}.jpg`}
                   alt={`${teamObject.teamObject.secondDriverCountry} flag`}
                   fill={true}
-                  quality={1}
+                  quality={50}
                 ></Image>
               </div>
               <div className="text-white font-f1bold text-[2.3vmin]">
