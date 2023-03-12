@@ -41,7 +41,7 @@ const SprintComponent: React.FC = () => {
       <div className="flex justify-center items-center text-white">
         <table>
           <thead>
-            <tr className="bg-[#FF0000]">
+            <tr className="bg-[#EE0000]">
               <th
                 className="px-[1.6vmax] py-[.8vmax] text-[1.6vmax] font-f1regular rounded-tl-[.6vmax] rounded-tr-[.6vmax]"
                 colSpan={2}
