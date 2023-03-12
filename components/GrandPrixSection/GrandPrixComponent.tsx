@@ -19,7 +19,6 @@ const GrandPrixComponent: React.FC = () => {
         <div className="absolute w-full h-full bg-dim-less shadow-[inset_0px_-10.5vmin_11vmin_0_rgba(0,0,0,1)] z-10"></div>
         <div className="absolute w-full h-full shadow-[inset_0px_10vmin_11vmin_0_rgba(0,0,0,1)] z-10"></div>
         <Image
-          priority
           src={Monaco}
           alt="Monaco Grand Prix"
           fill={true}
