@@ -79,7 +79,11 @@ const CardComponent: React.FC<Props> = teamObject => {
           <div className="h-[6vmax] w-[6vmax] relative">
             <Image
               className="rounded-[100%]"
-              src={`/images/drivers/${teamObject.teamObject.secondDriverLastName}.jpg`}
+              src={`/images/drivers/${
+                teamObject.teamObject.secondDriverLastName === 'de Vries'
+                  ? 'deVries'
+                  : teamObject.teamObject.secondDriverLastName
+              }.jpg`}
               alt={`${teamObject.teamObject.secondDriverName} ${teamObject.teamObject.secondDriverLastName}`}
               fill={true}
               quality={50}
@@ -100,11 +104,7 @@ const CardComponent: React.FC<Props> = teamObject => {
               <div className="w-[4.2vmin] h-[2.8vmin] relative">
                 <Image
                   className="rounded-[.6vmin]"
-                  src={`/images/flags/${
-                    teamObject.teamObject.secondDriverLastName === 'de Vries'
-                      ? 'deVries'
-                      : teamObject.teamObject.secondDriverLastName
-                  }.jpg`}
+                  src={`/images/flags/${teamObject.teamObject.secondDriverCountry}.jpg`}
                   alt={`${teamObject.teamObject.secondDriverCountry} flag`}
                   fill={true}
                   quality={50}
