@@ -19,7 +19,7 @@ const SprintComponent: React.FC = () => {
           <div className="relative w-[50vw] aspect-[3/2] self-end shrink-0 ">
             <div className="w-[80%] aspect-[3/2] absolute bottom-0 right-0 rounded-bl-[2.1vmax] border-b-[.7vmax] border-l-[.7vmax] border-b-[#FF0000] border-l-[#FF0000]">
               <Image
-                quality={50}
+                priority
                 src={Sprint1}
                 alt="Sprint at the 2022 Brazilian Grand Prix"
                 fill={true}
@@ -28,7 +28,7 @@ const SprintComponent: React.FC = () => {
             </div>
             <div className="w-[40%] aspect-[29/20] absolute top-0 left-0">
               <Image
-                quality={50}
+                priority
                 src={Sprint2}
                 alt="Kevin Magnussen gets pole at the 2022 Brazilian Grand Prix"
                 fill={true}
@@ -41,7 +41,7 @@ const SprintComponent: React.FC = () => {
       <div className="flex justify-center items-center text-white">
         <table>
           <thead>
-            <tr className="bg-[#EE0000]">
+            <tr className="bg-[#FF0000]">
               <th
                 className="px-[1.6vmax] py-[.8vmax] text-[1.6vmax] font-f1regular rounded-tl-[.6vmax] rounded-tr-[.6vmax]"
                 colSpan={2}

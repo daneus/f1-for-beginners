@@ -16,7 +16,7 @@ const FlagComponent: React.FC = () => {
         <div className="w-full flex justify-center items-start">
           <div className="w-[50%] flex items-center flex-col p-[1.5vmax] py-[1vmax] gap-[1.8vmax]">
             <div className="w-[45%] aspect-square relative">
-              <Image quality={50} src={yellowFlag} alt={'Yellow flag'} />
+              <Image priority src={yellowFlag} alt={'Yellow flag'} />
             </div>
             <div className="text-white font-f1regular text-center text-[1vmax]">
               <span className="font-f1bold">
@@ -28,7 +28,7 @@ const FlagComponent: React.FC = () => {
           </div>
           <div className="w-[50%] flex items-center flex-col p-[1.5vmax] py-[1vmax] gap-[1.8vmax]">
             <div className="w-[45%] aspect-square relative">
-              <Image quality={50} src={greenFlag} alt={'Green flag'} />
+              <Image priority src={greenFlag} alt={'Green flag'} />
             </div>
             <div className="text-white font-f1regular text-center text-[1vmax]">
               <span className="font-f1bold">Everything clear.</span>
@@ -40,7 +40,7 @@ const FlagComponent: React.FC = () => {
         <div className="w-full flex justify-center items-start">
           <div className="w-[50%] flex items-center flex-col p-[1.5vmax] py-[1vmax] gap-[1.8vmax]">
             <div className="w-[45%] aspect-square relative">
-              <Image quality={50} src={redFlag} alt={'Red flag'} />
+              <Image priority src={redFlag} alt={'Red flag'} />
             </div>
             <div className="text-white font-f1regular text-center text-[1vmax]">
               <span className="font-f1bold">Session suspended.</span>
@@ -50,7 +50,7 @@ const FlagComponent: React.FC = () => {
           </div>
           <div className="w-[50%] flex items-center flex-col p-[1.5vmax] py-[1vmax] gap-[1.8vmax]">
             <div className="w-[45%] aspect-square relative">
-              <Image quality={50} src={chequeredFlag} alt={'Chequered flag'} />
+              <Image priority src={chequeredFlag} alt={'Chequered flag'} />
             </div>
             <div className="text-white font-f1regular text-center text-[1vmax]">
               <span className="font-f1bold">Session completed.</span>

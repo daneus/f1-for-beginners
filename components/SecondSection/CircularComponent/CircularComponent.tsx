@@ -73,6 +73,7 @@ const CircularComponent: React.FC = () => {
           initial={false}
         ></motion.div>
         <Image
+          priority
           className="w-[55%]"
           src={RedBullLogo}
           alt={'Red Bull Logo'}
@@ -103,6 +104,7 @@ const CircularComponent: React.FC = () => {
           className="fade-circle"
         ></motion.div>
         <Image
+          priority
           className="h-[40%]"
           src={FerrariLogo}
           alt={'Ferrari Logo'}
@@ -133,6 +135,7 @@ const CircularComponent: React.FC = () => {
           className="fade-circle"
         ></motion.div>
         <Image
+          priority
           className="h-[35%]"
           src={WilliamsLogo}
           alt={'Williams Logo'}
@@ -163,6 +166,7 @@ const CircularComponent: React.FC = () => {
           className="fade-circle"
         ></motion.div>
         <Image
+          priority
           className="w-[45%]"
           src={MercedesLogo}
           alt={'Mercedes Logo'}
@@ -193,6 +197,7 @@ const CircularComponent: React.FC = () => {
           className="fade-circle"
         ></motion.div>
         <Image
+          priority
           className="w-[52.5%]"
           src={AlphaTauriLogo}
           alt={'AlphaTauri Logo'}
@@ -223,6 +228,7 @@ const CircularComponent: React.FC = () => {
           className="fade-circle"
         ></motion.div>
         <Image
+          priority
           className="w-[52.5%]"
           src={AlpineLogo}
           alt={'Alpine Logo'}
@@ -252,7 +258,12 @@ const CircularComponent: React.FC = () => {
           animate={selectedStatus.isHActive ? 'selected' : 'unselected'}
           className="fade-circle"
         ></motion.div>
-        <Image className="w-[57.5%]" src={HaasLogo} alt={'Haas Logo'}></Image>
+        <Image
+          priority
+          className="w-[57.5%]"
+          src={HaasLogo}
+          alt={'Haas Logo'}
+        ></Image>
       </motion.div>
       <motion.div
         whileHover={{ scale: 1.05 }}
@@ -279,6 +290,7 @@ const CircularComponent: React.FC = () => {
           className="fade-circle"
         ></motion.div>
         <Image
+          priority
           className="w-[45%]"
           src={McLarenLogo}
           alt={'McLaren Logo'}
@@ -309,6 +321,7 @@ const CircularComponent: React.FC = () => {
           className="fade-circle"
         ></motion.div>
         <Image
+          priority
           className="w-[60%] h-auto"
           src={AstonMartinLogo}
           alt={'Aston Martin Logo'}
@@ -339,6 +352,7 @@ const CircularComponent: React.FC = () => {
           className="fade-circle"
         ></motion.div>
         <Image
+          priority
           className="h-[62.5%]"
           src={AlfaRomeoLogo}
           alt={'Alfa Romeo Logo'}

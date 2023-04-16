@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import BG1 from '../../public/images/BG1.jpg'
+import BG1 from '../../public/images/BG1.svg'
 import F1Logo from '../../public/logos/Formula1.svg'
 
 const Header: React.FC = () => {
@@ -11,7 +11,8 @@ const Header: React.FC = () => {
       >
         <div className="absolute w-full h-full bg-dim shadow-[inset_0px_-9vmin_11vmin_0_rgba(0,0,0,.8)]"></div>
         <Image
-          quality={50}
+          priority
+          quality={1}
           id="BG1"
           className="w-full h-full object-cover"
           src={BG1}
