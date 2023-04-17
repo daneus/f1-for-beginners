@@ -127,13 +127,13 @@ const QualifyingComponent: React.FC = () => {
       <div className="w-[100vw] text-right text-[3.1vmax] font-f1bold text-white important py-[5vmax] pr-[3vmax]">
         Qualifying session
       </div>
-      <div className="w-[100vw] h-[100vh] relative bg-black">
+      <div className="w-[100vw] h-[100dvh] relative bg-black">
         <div
           ref={trackRef}
-          className="absolute h-[100vh] aspect-[360/1900] z-[10]"
+          className="absolute h-[100dvh] aspect-[360/1900] z-[10]"
         >
           <Image src={raceTrack} alt="Racing track" fill={true}></Image>
-          <div className="q2safe q3safe q1 w-[6vh] h-[6vh] absolute bottom-[85%] left-[10%]">
+          <div className="q2safe q3safe q1 w-[6dvh] h-[6dvh] absolute bottom-[85%] left-[10%]">
             <Image
               src={raceCar}
               alt="Racing car"
@@ -141,7 +141,7 @@ const QualifyingComponent: React.FC = () => {
               className="z-10"
             />
           </div>
-          <div className="q3safe w-[6vh] h-[6vh] absolute bottom-[81%] right-[10%]">
+          <div className="q3safe w-[6dvh] h-[6dvh] absolute bottom-[81%] right-[10%]">
             <Image
               src={raceCar}
               alt="Racing car"
@@ -149,7 +149,7 @@ const QualifyingComponent: React.FC = () => {
               className="z-10"
             />
           </div>
-          <div className="q3safe w-[6vh] h-[6vh] absolute bottom-[77%] left-[10%]">
+          <div className="q3safe w-[6dvh] h-[6dvh] absolute bottom-[77%] left-[10%]">
             <Image
               src={raceCar}
               alt="Racing car"
@@ -157,7 +157,7 @@ const QualifyingComponent: React.FC = () => {
               className="z-10"
             />
           </div>
-          <div className="q3safe w-[6vh] h-[6vh] absolute bottom-[73%] right-[10%]">
+          <div className="q3safe w-[6dvh] h-[6dvh] absolute bottom-[73%] right-[10%]">
             <Image
               src={raceCar}
               alt="Racing car"
@@ -165,7 +165,7 @@ const QualifyingComponent: React.FC = () => {
               className="z-10"
             />
           </div>
-          <div className="q3safe w-[6vh] h-[6vh] absolute bottom-[69%] left-[10%]">
+          <div className="q3safe w-[6dvh] h-[6dvh] absolute bottom-[69%] left-[10%]">
             <Image
               src={raceCar}
               alt="Racing car"
@@ -173,7 +173,7 @@ const QualifyingComponent: React.FC = () => {
               className="z-10"
             />
           </div>
-          <div className="q3safe w-[6vh] h-[6vh] absolute bottom-[65%] right-[10%]">
+          <div className="q3safe w-[6dvh] h-[6dvh] absolute bottom-[65%] right-[10%]">
             <Image
               src={raceCar}
               alt="Racing car"
@@ -181,7 +181,7 @@ const QualifyingComponent: React.FC = () => {
               className="z-10"
             />
           </div>
-          <div className="q3safe w-[6vh] h-[6vh] absolute bottom-[61%] left-[10%]">
+          <div className="q3safe w-[6dvh] h-[6dvh] absolute bottom-[61%] left-[10%]">
             <Image
               src={raceCar}
               alt="Racing car"
@@ -189,7 +189,7 @@ const QualifyingComponent: React.FC = () => {
               className="z-10"
             />
           </div>
-          <div className="q3safe w-[6vh] h-[6vh] absolute bottom-[57%] right-[10%]">
+          <div className="q3safe w-[6dvh] h-[6dvh] absolute bottom-[57%] right-[10%]">
             <Image
               src={raceCar}
               alt="Racing car"
@@ -197,7 +197,7 @@ const QualifyingComponent: React.FC = () => {
               className="z-10"
             />
           </div>
-          <div className="q3safe w-[6vh] h-[6vh] absolute bottom-[53%] left-[10%]">
+          <div className="q3safe w-[6dvh] h-[6dvh] absolute bottom-[53%] left-[10%]">
             <Image
               src={raceCar}
               alt="Racing car"
@@ -205,7 +205,7 @@ const QualifyingComponent: React.FC = () => {
               className="z-10"
             />
           </div>
-          <div className="q3safe w-[6vh] h-[6vh] absolute bottom-[49%] right-[10%]">
+          <div className="q3safe w-[6dvh] h-[6dvh] absolute bottom-[49%] right-[10%]">
             <Image
               src={raceCar}
               alt="Racing car"
@@ -213,7 +213,7 @@ const QualifyingComponent: React.FC = () => {
               className="z-10"
             />
           </div>
-          <div className="q3safe q2 w-[6vh] h-[6vh] absolute bottom-[45%] left-[10%]">
+          <div className="q3safe q2 w-[6dvh] h-[6dvh] absolute bottom-[45%] left-[10%]">
             <Image
               src={raceCar}
               alt="Racing car"
@@ -221,7 +221,7 @@ const QualifyingComponent: React.FC = () => {
               className="z-10"
             />
           </div>
-          <div className="q3safe q2 w-[6vh] h-[6vh] absolute bottom-[41%] right-[10%]">
+          <div className="q3safe q2 w-[6dvh] h-[6dvh] absolute bottom-[41%] right-[10%]">
             <Image
               src={raceCar}
               alt="Racing car"
@@ -229,7 +229,7 @@ const QualifyingComponent: React.FC = () => {
               className="z-10"
             />
           </div>
-          <div className="q3safe q2 w-[6vh] h-[6vh] absolute bottom-[37%] left-[10%]">
+          <div className="q3safe q2 w-[6dvh] h-[6dvh] absolute bottom-[37%] left-[10%]">
             <Image
               src={raceCar}
               alt="Racing car"
@@ -237,7 +237,7 @@ const QualifyingComponent: React.FC = () => {
               className="z-10"
             />
           </div>
-          <div className="q3safe q2 w-[6vh] h-[6vh] absolute bottom-[33%] right-[10%]">
+          <div className="q3safe q2 w-[6dvh] h-[6dvh] absolute bottom-[33%] right-[10%]">
             <Image
               src={raceCar}
               alt="Racing car"
@@ -245,7 +245,7 @@ const QualifyingComponent: React.FC = () => {
               className="z-10"
             />
           </div>
-          <div className="q3safe q2 w-[6vh] h-[6vh] absolute bottom-[29%] left-[10%]">
+          <div className="q3safe q2 w-[6dvh] h-[6dvh] absolute bottom-[29%] left-[10%]">
             <Image
               src={raceCar}
               alt="Racing car"
@@ -253,7 +253,7 @@ const QualifyingComponent: React.FC = () => {
               className="z-10"
             />
           </div>
-          <div className="q3 w-[6vh] h-[6vh] absolute bottom-[25%] right-[10%]">
+          <div className="q3 w-[6dvh] h-[6dvh] absolute bottom-[25%] right-[10%]">
             <Image
               src={raceCar}
               alt="Racing car"
@@ -261,7 +261,7 @@ const QualifyingComponent: React.FC = () => {
               className="z-10"
             />
           </div>
-          <div className="q3 w-[6vh] h-[6vh] absolute bottom-[21%] left-[10%]">
+          <div className="q3 w-[6dvh] h-[6dvh] absolute bottom-[21%] left-[10%]">
             <Image
               src={raceCar}
               alt="Racing car"
@@ -269,7 +269,7 @@ const QualifyingComponent: React.FC = () => {
               className="z-10"
             />
           </div>
-          <div className="q3 w-[6vh] h-[6vh] absolute bottom-[17%] right-[10%]">
+          <div className="q3 w-[6dvh] h-[6dvh] absolute bottom-[17%] right-[10%]">
             <Image
               src={raceCar}
               alt="Racing car"
@@ -277,7 +277,7 @@ const QualifyingComponent: React.FC = () => {
               className="z-10"
             />
           </div>
-          <div className="q3 w-[6vh] h-[6vh] absolute bottom-[13%] left-[10%]">
+          <div className="q3 w-[6dvh] h-[6dvh] absolute bottom-[13%] left-[10%]">
             <Image
               src={raceCar}
               alt="Racing car"
@@ -285,7 +285,7 @@ const QualifyingComponent: React.FC = () => {
               className="z-10"
             />
           </div>
-          <div className="q3 w-[6vh] h-[6vh] absolute bottom-[9%] right-[10%]">
+          <div className="q3 w-[6dvh] h-[6dvh] absolute bottom-[9%] right-[10%]">
             <Image
               src={raceCar}
               alt="Racing car"
@@ -295,9 +295,9 @@ const QualifyingComponent: React.FC = () => {
           </div>
         </div>
         <div className="">
-          <div className="flex items-center text-white h-[100vh] width-[100vw]">
-            <div className="h-[100vh] aspect-[360/1900]"></div>
-            <div className="h-[100vh] flex grow justify-center items-center relative">
+          <div className="flex items-center text-white h-[100dvh] width-[100vw]">
+            <div className="h-[100dvh] aspect-[360/1900]"></div>
+            <div className="h-[100dvh] flex grow justify-center items-center relative">
               <div className="absolute w-full h-full bg-dim z-[1]"></div>
               <div className="absolute w-full h-full right">
                 <Image
@@ -314,9 +314,9 @@ const QualifyingComponent: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-center text-white h-[100vh] width-[100vw]">
-            <div className="h-[100vh] aspect-[360/1900]"></div>
-            <div className="q3-breakpoint h-[100vh] w-auto grow flex justify-center items-center">
+          <div className="flex items-center text-white h-[100dvh] width-[100vw]">
+            <div className="h-[100dvh] aspect-[360/1900]"></div>
+            <div className="q3-breakpoint h-[100dvh] w-auto grow flex justify-center items-center">
               <div className="absolute w-full h-full bg-dim z-[1]"></div>
               <div className="absolute w-full h-full right">
                 <Image
@@ -336,9 +336,9 @@ const QualifyingComponent: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-center text-white h-[100vh] width-[100vw]">
-            <div className="h-[100vh] aspect-[360/1900]"></div>
-            <div className="q3-safe-breakpoint h-[100vh] w-auto grow flex justify-center items-center">
+          <div className="flex items-center text-white h-[100dvh] width-[100vw]">
+            <div className="h-[100dvh] aspect-[360/1900]"></div>
+            <div className="q3-safe-breakpoint h-[100dvh] w-auto grow flex justify-center items-center">
               <div className="absolute w-full h-full bg-dim z-[1]"></div>
               <div className="absolute w-full h-full right">
                 <Image
@@ -358,9 +358,9 @@ const QualifyingComponent: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-center text-white h-[100vh] width-[100vw]">
-            <div className="h-[100vh] aspect-[360/1900]"></div>
-            <div className="q2-breakpoint h-[100vh] w-auto grow flex justify-center items-center">
+          <div className="flex items-center text-white h-[100dvh] width-[100vw]">
+            <div className="h-[100dvh] aspect-[360/1900]"></div>
+            <div className="q2-breakpoint h-[100dvh] w-auto grow flex justify-center items-center">
               <div className="absolute w-full h-full bg-dim z-[1]"></div>
               <div className="absolute w-full h-full right">
                 <Image
@@ -380,9 +380,9 @@ const QualifyingComponent: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-center text-white h-[100vh] width-[100vw]">
-            <div className="h-[100vh] aspect-[360/1900]"></div>
-            <div className="q1-breakpoint h-[100vh] w-auto grow flex justify-center items-center">
+          <div className="flex items-center text-white h-[100dvh] width-[100vw]">
+            <div className="h-[100dvh] aspect-[360/1900]"></div>
+            <div className="q1-breakpoint h-[100dvh] w-auto grow flex justify-center items-center">
               <div className="absolute w-full h-full bg-dim z-[1]"></div>
               <div className="absolute w-full h-full right">
                 <Image
@@ -402,9 +402,9 @@ const QualifyingComponent: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-center text-white h-[100vh] width-[100vw]">
-            <div className="h-[100vh] aspect-[360/1900]"></div>
-            <div className="h-[100vh] w-auto grow flex justify-center items-center">
+          <div className="flex items-center text-white h-[100dvh] width-[100vw]">
+            <div className="h-[100dvh] aspect-[360/1900]"></div>
+            <div className="h-[100dvh] w-auto grow flex justify-center items-center">
               <div className="absolute w-full h-full bg-dim z-[1]"></div>
               <div className="absolute w-full h-full right">
                 <Image
@@ -420,9 +420,9 @@ const QualifyingComponent: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-center text-white h-[100vh] width-[100vw]">
-            <div className="h-[100vh] aspect-[360/1900]"></div>
-            <div className="trackSpace h-[100vh] w-auto grow flex justify-center items-center">
+          <div className="flex items-center text-white h-[100dvh] width-[100vw]">
+            <div className="h-[100dvh] aspect-[360/1900]"></div>
+            <div className="trackSpace h-[100dvh] w-auto grow flex justify-center items-center">
               <div className="absolute w-full h-full bg-dim z-[1]"></div>
               <div className="absolute w-full h-full right">
                 <Image
