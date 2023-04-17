@@ -11,7 +11,7 @@ const PointsComponent: React.FC = () => {
       <div className="flex justify-center items-center text-white mt-[4vmax]">
         <table>
           <thead>
-            <tr className="bg-[#FF0000]">
+            <tr className="bg-[#EE0000]">
               <th
                 className="px-[1.4vmax] py-[.6vmax] text-[1.4vmax] font-f1regular rounded-tl-[.6vmax] rounded-tr-[.6vmax]"
                 colSpan={2}
@@ -85,7 +85,7 @@ const PointsComponent: React.FC = () => {
             </div>
           </div>
           <div className="relative w-[4vmax] aspect-square justify-self-end">
-            <Image priority src={softIcon} alt="Soft tyre icon" fill={true} />
+            <Image src={softIcon} alt="Soft tyre icon" fill={true} />
           </div>
         </div>
         <div className="flex justify-center items-center bg-[#1A191E] h-[8vmax]">
@@ -95,12 +95,7 @@ const PointsComponent: React.FC = () => {
         </div>
         <div className="flex justify-center items-center p-[1vmax] gap-[1vmax]">
           <div className="relative h-[3.5vmax] aspect-square">
-            <Image
-              priority
-              src={FastestLap}
-              alt="Fastest lap icon"
-              fill={true}
-            />
+            <Image src={FastestLap} alt="Fastest lap icon" fill={true} />
           </div>
           <div className="text-[#ED00FE] font-f1bold text-[2vmax]">
             FASTEST LAP

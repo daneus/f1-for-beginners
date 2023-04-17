@@ -41,12 +41,11 @@ const CardComponent: React.FC<Props> = teamObject => {
         <div className="flex justify-start items-center gap-[1.5vmax]">
           <div className="h-[6vmax] w-[6vmax] relative">
             <Image
-              priority
               className="rounded-[100%]"
               src={`/images/drivers/${teamObject.teamObject.firstDriverLastName}.jpg`}
               alt={`${teamObject.teamObject.firstDriverName} ${teamObject.teamObject.firstDriverLastName}`}
               fill={true}
-              quality={1}
+              quality={50}
             ></Image>
           </div>
           <div className="flex justify-center items-start flex-col gap-[.3vmax]">
@@ -63,12 +62,11 @@ const CardComponent: React.FC<Props> = teamObject => {
             <div className="flex justify-center items-center gap-[.5vmax]">
               <div className="w-[4.2vmin] h-[2.8vmin] relative">
                 <Image
-                  priority
                   className="rounded-[.6vmin]"
                   src={`/images/flags/${teamObject.teamObject.firstDriverCountry}.jpg`}
                   alt={`${teamObject.teamObject.firstDriverCountry} flag`}
                   fill={true}
-                  quality={1}
+                  quality={50}
                 ></Image>
               </div>
               <div className="text-white font-f1bold text-[2.3vmin]">
@@ -80,12 +78,15 @@ const CardComponent: React.FC<Props> = teamObject => {
         <div className="flex justify-start items-center gap-[1.5vmax]">
           <div className="h-[6vmax] w-[6vmax] relative">
             <Image
-              priority
               className="rounded-[100%]"
-              src={`/images/drivers/${teamObject.teamObject.secondDriverLastName}.jpg`}
+              src={`/images/drivers/${
+                teamObject.teamObject.secondDriverLastName === 'de Vries'
+                  ? 'deVries'
+                  : teamObject.teamObject.secondDriverLastName
+              }.jpg`}
               alt={`${teamObject.teamObject.secondDriverName} ${teamObject.teamObject.secondDriverLastName}`}
               fill={true}
-              quality={1}
+              quality={50}
             ></Image>
           </div>
           <div className="flex justify-center items-start flex-col gap-[.3vmax]">
@@ -102,12 +103,11 @@ const CardComponent: React.FC<Props> = teamObject => {
             <div className="flex justify-center items-center gap-[.5vmax]">
               <div className="w-[4.2vmin] h-[2.8vmin] relative">
                 <Image
-                  priority
                   className="rounded-[.6vmin]"
                   src={`/images/flags/${teamObject.teamObject.secondDriverCountry}.jpg`}
                   alt={`${teamObject.teamObject.secondDriverCountry} flag`}
                   fill={true}
-                  quality={1}
+                  quality={50}
                 ></Image>
               </div>
               <div className="text-white font-f1bold text-[2.3vmin]">

@@ -18,7 +18,7 @@ const FreePracticeComponent: React.FC = () => {
         <div className="relative w-[50vw] aspect-[3/2] self-end shrink-0 ">
           <div className="w-[80%] aspect-[3/2] absolute bottom-0 right-0 rounded-bl-[2.1vmax] border-b-[.7vmax] border-l-[.7vmax] border-b-[#FF0000] border-l-[#FF0000]">
             <Image
-              priority
+              quality={50}
               src={Spa}
               alt="Free practice sessions at Spa-Francorchamps"
               fill={true}
@@ -27,7 +27,7 @@ const FreePracticeComponent: React.FC = () => {
           </div>
           <div className="w-[40%] aspect-[29/20] absolute top-0 left-0">
             <Image
-              priority
+              quality={50}
               src={Practice2}
               alt="Mercedes at practice session"
               fill={true}

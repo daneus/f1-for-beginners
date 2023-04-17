@@ -24,7 +24,7 @@ const TyreComponent: React.FC = () => {
             <div className="flex justify-center items-center flex-col bg-[#151515] p-[1.5vmax] rounded-[.8vmax]">
               <div className="w-[12vmax] aspect-square relative animate-[spin_25s_infinite_linear]">
                 <Image
-                  quality={100}
+                  quality={60}
                   src={Soft}
                   alt="Soft tyre"
                   fill={true}
@@ -41,7 +41,7 @@ const TyreComponent: React.FC = () => {
             <div className="flex justify-start items-center flex-col bg-[#151515] p-[1.5vmax] rounded-[.8vmax]">
               <div className="w-[12vmax] aspect-square relative animate-[spin_25s_infinite_linear]">
                 <Image
-                  quality={100}
+                  quality={60}
                   src={Medium}
                   alt="Medium tyre"
                   fill={true}
@@ -57,7 +57,7 @@ const TyreComponent: React.FC = () => {
             <div className="flex justify-start items-center flex-col bg-[#151515] p-[1.5vmax] rounded-[.8vmax]">
               <div className="w-[12vmax] aspect-square relative animate-[spin_25s_infinite_linear]">
                 <Image
-                  quality={100}
+                  quality={60}
                   src={Hard}
                   alt="Hard tyre"
                   fill={true}
@@ -81,7 +81,7 @@ const TyreComponent: React.FC = () => {
             <div className="flex justify-center items-center flex-col bg-[#151515] p-[1.5vmax] rounded-[.8vmax]">
               <div className="w-[12vmax] aspect-square relative animate-[spin_25s_infinite_linear]">
                 <Image
-                  quality={100}
+                  quality={60}
                   src={Inter}
                   alt="Intermediate tyre"
                   fill={true}
@@ -98,7 +98,7 @@ const TyreComponent: React.FC = () => {
             <div className="flex justify-start items-center flex-col bg-[#151515] p-[1.5vmax] rounded-[.8vmax]">
               <div className="w-[12vmax] aspect-square relative animate-[spin_25s_infinite_linear]">
                 <Image
-                  quality={100}
+                  quality={60}
                   src={Wet}
                   alt="Wet tyre"
                   fill={true}

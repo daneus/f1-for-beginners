@@ -132,12 +132,7 @@ const QualifyingComponent: React.FC = () => {
           ref={trackRef}
           className="absolute h-[100vh] aspect-[360/1900] z-[10]"
         >
-          <Image
-            priority
-            src={raceTrack}
-            alt="Racing track"
-            fill={true}
-          ></Image>
+          <Image src={raceTrack} alt="Racing track" fill={true}></Image>
           <div className="q2safe q3safe q1 w-[6vh] h-[6vh] absolute bottom-[85%] left-[10%]">
             <Image
               src={raceCar}
@@ -306,7 +301,6 @@ const QualifyingComponent: React.FC = () => {
               <div className="absolute w-full h-full bg-dim z-[1]"></div>
               <div className="absolute w-full h-full right">
                 <Image
-                  priority
                   src={quali1}
                   alt=""
                   fill={true}
@@ -326,7 +320,6 @@ const QualifyingComponent: React.FC = () => {
               <div className="absolute w-full h-full bg-dim z-[1]"></div>
               <div className="absolute w-full h-full right">
                 <Image
-                  priority
                   src={quali2}
                   alt=""
                   fill={true}
@@ -349,7 +342,6 @@ const QualifyingComponent: React.FC = () => {
               <div className="absolute w-full h-full bg-dim z-[1]"></div>
               <div className="absolute w-full h-full right">
                 <Image
-                  priority
                   src={quali3}
                   alt=""
                   fill={true}
@@ -372,7 +364,6 @@ const QualifyingComponent: React.FC = () => {
               <div className="absolute w-full h-full bg-dim z-[1]"></div>
               <div className="absolute w-full h-full right">
                 <Image
-                  priority
                   src={quali4}
                   alt=""
                   fill={true}
@@ -395,7 +386,6 @@ const QualifyingComponent: React.FC = () => {
               <div className="absolute w-full h-full bg-dim z-[1]"></div>
               <div className="absolute w-full h-full right">
                 <Image
-                  priority
                   src={quali5}
                   alt=""
                   fill={true}
@@ -418,7 +408,6 @@ const QualifyingComponent: React.FC = () => {
               <div className="absolute w-full h-full bg-dim z-[1]"></div>
               <div className="absolute w-full h-full right">
                 <Image
-                  priority
                   src={quali6}
                   alt=""
                   fill={true}
@@ -437,7 +426,6 @@ const QualifyingComponent: React.FC = () => {
               <div className="absolute w-full h-full bg-dim z-[1]"></div>
               <div className="absolute w-full h-full right">
                 <Image
-                  priority
                   src={quali7}
                   alt=""
                   fill={true}

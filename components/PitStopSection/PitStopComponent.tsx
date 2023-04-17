@@ -12,10 +12,10 @@ const PitStopComponent: React.FC = () => {
       <div className="mt-[5vmax] relative w-[55%] aspect-video bg-red-300 mx-auto">
         <div className="absolute w-full h-full bg-dim-less z-10"></div>
         <Image
-          priority
           src={FastestPitStop}
           alt="World record for fastest pit stop"
           fill={true}
+          unoptimized={true}
         ></Image>
       </div>
       <div className="mt-[1vmax] px-[2vmax] w-[60%] text-[1.2vmax] font-f1regular text-white text-center mx-auto">
